@@ -1,0 +1,35 @@
+<header id="header">
+
+    <a class="logo">
+        <img src="{{appState.imgPath}}logo.png" alt=""/>
+    </a>
+
+    <div class="headerContent">
+
+        <nav class="menu">
+            <ul>
+                <li><a href="">{{appState.locale.whyOptimeal}}</a></li>
+                <li><a href="">{{appState.locale.aboutImmunity}}</a></li>
+                <li><a href="">{{appState.locale.catalogue}}</a></li>
+                <li><a href="">{{appState.locale.production}}</a></li>
+                <li><a href="">{{appState.locale.encyclopedia}}</a></li>
+                <li><a href="">{{appState.locale.contacts}}</a></li>
+            </ul>
+        </nav>
+
+        <nav class="languagesMenu">
+            <ul>
+                <li><a href="">Рус</a></li>
+                <li><a href="">Укр</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="petToggle">
+        <div class='warped'>
+            <span class='w0'>Д</span><span class='w1'>л</span><span class='w2'>я</span><span class='w3'> </span><span class='w4'>с</span><span class='w5'>о</span><span class='w6'>б</span><span class='w7'>а</span><span class='w8'>к</span><span class='w9'> </span><span class='w10'>►</span>
+        </div>
+    </div>
+
+</header>

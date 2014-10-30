@@ -1,0 +1,106 @@
+doctype html
+html(lang="ru")
+	head
+		block header
+			meta(charset="UTF-8")
+			meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport')
+			title= "Shabo | Административная панель"
+			link(href="/js/lib/admin-lte/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+			link(href="/js/lib/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+			link(href="/js/lib/admin-lte/css/ionicons.min.css" rel="stylesheet" type="text/css")
+			link(href="/js/lib/admin-lte/css/AdminLTE.css" rel="stylesheet" type="text/css")
+	body.skin-blue
+		header.header
+			a.logo(href="dashboard")= "Админ-панель"
+			nav.navbar.navbar-static-top(role="navigation")
+				a.navbar-btn.sidebar-toggle(href="#" data-toggle="offcanvas" role="button")
+					span.sr-only= "Toggle navigation"
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				.navbar-right
+					ul.nav.navbar-nav
+						li.dropdown.user.user-menu
+							a.dropdown-toggle(href="#" data-toggle="dropdown")
+								i.glyphicon.glyphicon-user
+								span= user.username
+								i.caret
+							ul.dropdown-menu
+								li.user-footer
+									.pull-right
+										a.btn.btn-default.btn-flat(href="/admin/logout")= "Выйти"
+		.wrapper.row-offcanvas.row-offcanvas-left
+			aside.left-side.sidebar-offcanvas
+				section.sidebar
+					ul.sidebar-menu
+						li
+							a.module(href="/admin/pages")
+								i.fa.fa-files-o
+								span= "Странички"
+						li
+							a.module(href="/admin/contacts")
+								i.fa.fa-files-o
+								span= "Контакты"
+						li
+							a.module(href="/admin/galleryImages")
+								i.fa.fa-files-o
+								span= "Изображения галереи"
+						li
+							a.module(href="/admin/galleryVideos")
+								i.fa.fa-files-o
+								span= "Видео"
+						li
+							a.module(href="/admin/awards")
+								i.fa.fa-files-o
+								span= "Награды"
+						li
+							a
+								i.fa.fa-files-o
+								span= "Каталог"
+
+							ul.inner-menu
+								li
+									a.module(href="/admin/productCategories")
+										i.fa.fa-files-o
+										span= "Категории товаров"
+								li
+									a.module(href="/admin/products")
+										i.fa.fa-files-o
+										span= "Товары"
+						li
+							a
+								i.fa.fa-files-o
+								span= "Статьи"
+							ul.inner-menu
+								li
+									a.module(href="/admin/articleCategories")
+										i.fa.fa-files-o
+										span= "Категории статей"
+								li
+									a.module(href="/admin/articles")
+										i.fa.fa-files-o
+										span= "Статьи"
+								li
+									a.module(href="/admin/authors")
+										i.fa.fa-files-o
+										span= "Авторы"
+						li
+							a
+								i.fa.fa-files-o
+								span= "Вакансии"
+							ul.inner-menu
+								li
+									a.module(href="/admin/vacancies")
+										i.fa.fa-files-o
+										span= "Список вакансий"
+								li
+									a.module(href="/admin/vacancyResponses")
+										i.fa.fa-files-o
+										span= "Отклики на вакансии"
+			aside#moduleContent
+				block content
+		block scripts
+			script(src="/js/lib/requirejs/require.js" data-main="/js/app/admin/core/core.js")
+			script.
+				window.langs = !{JSON.stringify(langs)}
+				window.locale = !{JSON.stringify(locale)}

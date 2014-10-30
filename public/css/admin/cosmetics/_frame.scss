@@ -1,0 +1,390 @@
+@charset "UTF-8";
+@import '../../bourbon/_bourbon.scss';
+@import '../../base/_mixins.scss';
+@import '../../base/_placeholders.scss';
+@import '../../base/_variables.scss';
+
+.leftPanel {
+    @include position(absolute, 140px null null -176px);
+    @include size(164px 340px);
+    z-index: 1;
+    text-shadow: -1px -1px 0 #c58730;
+
+    .small & {
+        left: 18px;
+    }
+
+    .taleBtnWrap {
+        display: block;
+        margin-bottom: 9px;
+        border-radius: 6px;
+
+        .taleBtn {
+            @include clearfix;
+            padding: 5px 4px 5px;
+            float: none;
+            margin-bottom: 1px;
+            font-weight: bold;
+            font-size: 17px;
+
+            .title {
+                margin-bottom: 8px;
+                position: relative;
+            }
+        }
+    }
+
+    .hero {
+        display: block;
+        float: left;
+        width: 62px;
+        height: 62px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #fff;
+        margin: 0 4px 5px;
+        border-radius: 10px;
+        box-shadow: $innerShadow;
+    }
+
+}
+
+.authorText {
+    position: absolute;
+    top: 110px;
+    left: 236px;
+    width: 752px;
+    height: 86px;
+    display: none;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -17px;
+        z-index: -1;
+        @include size(787px 117px);
+        background: url('#{$imgPath}authorText.png');
+    }
+
+    &.active {
+        display: block;
+    }
+
+    textarea {
+        font-family: Arial;
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+
+        overflow: hidden;
+        outline: none;
+
+        box-shadow: none;
+        resize: none;
+        background: none;
+    }
+}
+.taleZone .displayFrame .chooseMusic {
+    bottom: -95px;
+    left: -176px;
+    z-index: 1;
+
+    .small & {
+        bottom: 35px;
+        left: 14px;
+    }
+}
+
+.btmPanel {
+    position: absolute;
+    bottom: -119px;
+    left: 326px;
+    z-index: 1;
+
+    .small & {
+        bottom: 4px;
+    }
+
+    .taleBtnWrap {
+        border-radius: 7px;
+        padding: 7px 22px;
+    }
+
+    .taleBtn {
+        border-radius: 5px;
+        padding: 7px 8px 5px;
+    }
+
+    .item {
+        float: left;
+    }
+
+    .frame {
+        position: relative;
+        display: block;
+        float: left;
+        @include size(83px 65px);
+        margin: 0 5px 0 0;
+        padding: 21px 0;
+
+        background: #f4ecd9;
+        color: #333;
+        box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 7px;
+
+        font-size: 14px;
+
+        &.addFrame {
+            margin: 0;
+        }
+
+        .plus {
+            @include position(absolute, 13px null null 24px);
+            @include size(39px 39px);
+            background: url('#{$imgPath}addSlide.png');
+        }
+    }
+
+    .arrow {
+        @include position(absolute, 25px null null null);
+        @include size(15px 29px);
+        cursor: pointer;
+
+        &.btm {
+            right: -19px;
+            background: url('#{$imgPath}nextFrame.png');
+        }
+
+        &.top {
+            left: -19px;
+            background: url('#{$imgPath}prevFrame.png');
+        }
+    }
+}
+
+.rightPanel {
+    @include position(absolute, 453 -179px null null);
+    z-index: 1;
+    width: 156px;
+
+    .small & {
+        right: 16px;
+        top: 357px;
+    }
+
+    .taleBtnWrap {
+        display: block;
+        margin: 0 0 9px;
+        font-size: 19px;
+
+        .taleBtn {
+            @include size(133px 56px);
+            margin: 0 0 1px 1px;
+            float: none;
+            padding: 10px 0 0;
+
+            &.preview {
+                text-shadow: -1px -1px 0 #c28f58;
+                color: $orange;
+            }
+
+            &.removeSlide {
+                color: $red;
+                text-shadow: -1px -1px 0 #bb3d0a;
+            }
+        }
+    }
+}
+
+.endTale.taleBtnWrap {
+    position: absolute;
+    bottom: -88px;
+    right: -178px;
+    z-index: 1;
+    padding: 9px 13px 9px 9px;
+
+    .small & {
+        bottom: 34px;
+        right: 15px;
+    }
+
+    .taleBtn {
+        @include size(172px 57px);
+        border-radius: 10px;
+        margin: 0 0 0 1px;
+        font-size: 22px;
+        padding: 6px 15px;
+        text-shadow: -1px -1px 0 #bb3e04;
+    }
+}
+
+.dragableHeroes {
+    position: absolute;
+    z-index: 5;
+}
+
+.heroInDrag {
+    cursor: move;
+    position: absolute;
+
+    &:hover .name {
+        display: block;
+    }
+
+    .displayFrame &.secondPlan {
+        .name {
+            margin-left: -55px;
+
+            input {
+                font-family: Arial;
+                width: 110px;
+            }
+        }
+    }
+
+    .name {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -84px;
+        display: none;
+
+        input {
+            width: 168px;
+            height: 38px;
+            border: none;
+            box-shadow: $outerShadow;
+            border-radius: 5px;
+            padding: 3px 10px;
+            outline: none;
+            overflow: auto;
+            text-align: center;
+        }
+    }
+
+    .replica {
+        @include size(216px null);
+        @include position(absolute, -70px -216px null null);
+
+        &.dragged {
+            @include position(absolute, auto auto null null);
+        }
+
+        &:before {
+            content: '';
+            z-index: -1;
+            @include size(67px 57px);
+        }
+
+        &.RT:before {
+            @include position(absolute, null null -45px -3px);
+            background: url('#{$imgPath}bubleTailRT.png');
+        }
+
+        &.LT:before {
+            @include position(absolute, null -3px -45px null);
+            background: url('#{$imgPath}bubleTailLT.png');
+        }
+
+        &.RB:before {
+            @include position(absolute, -50px null null -3px);
+            background: url('#{$imgPath}bubleTailRB.png');
+        }
+
+        &.LB:before {
+            @include position(absolute, -50px -3px null null);
+            background: url('#{$imgPath}bubleTailLB.png');
+        }
+
+        &:after {
+            content: '';
+            @include position(absolute, 0 0 0 0);
+            z-index: -2;
+            border-radius: 52px;
+            box-shadow: 0px 0px 12px 13px rgba(0, 0, 0, 0.15);
+        }
+
+        textarea {
+            @include size(216px 80px);
+            font-family: Arial;
+            padding: 20px;
+            display: block;
+            background: #f4ecd9;
+            border-radius: 53px;
+            overflow: hidden;
+            text-align: center;
+            font-size: 14px;
+            outline: none;
+            border: none;
+            resize: none;
+        }
+    }
+
+    .removeHero {
+        @include position(absolute, 0 null null 0);
+        z-index: 2;
+        @include size(30px 30px);
+        background-color: #f4ecd9;
+        border-radius: 6px;
+        box-shadow: $outerShadow;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            @include position(absolute, 7px null null 8px);
+            @include size(15px 14px);
+            background: url('#{$imgPath}smallX.jpg');
+        }
+    }
+
+    .replicaBtn {
+        cursor: pointer;
+
+        &.add {
+            @include position(absolute, 0 0 null null);
+            @include size(30px 30px);
+            background: #f4ecd9;
+            box-shadow: $outerShadow;
+            border-radius: 5px;
+            z-index: 2;
+
+            &:after {
+                content: '';
+                @include position(absolute, 7px null null 4px);
+                @include size(23px 18px);
+                background: url('#{$imgPath}addBubble.png');
+            }
+        }
+        &.remove {
+            @extend .removeHero;
+            left: auto;
+            right: -15px;
+        }
+    }
+}
+
+.heroImg {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.firstPlan {
+    position: absolute;
+    z-index: 3;
+    @include size(190px 240px);
+}
+.secondPlan {
+    position: absolute;
+    z-index: 1;
+    @include size(120px 150px);
+}

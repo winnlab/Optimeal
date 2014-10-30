@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import '../bourbon/_bourbon.scss';
+@import '../base/_mixins.scss';
+@import '../base/_placeholders.scss';
+@import '../base/_variables.scss';
+@import '../base/_fonts.scss';
+
+
+*,
+*:after,
+*:before {
+    @include box-sizing(border-box);
+}
+
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+html {
+	font-size: 16px;
+}
+
+body {
+    background-size: cover;
+    background-position: center center;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+#modules {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+module {
+    display: none;
+
+    &.active {
+        display: block;
+        @include size(100% auto);
+    }
+}
+
+@import 'general.scss';

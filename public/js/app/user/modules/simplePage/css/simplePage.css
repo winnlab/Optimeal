@@ -1,0 +1,794 @@
+.mainPageWrapper .mainPageFirst .content .catImage, .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout, .mainPageWrapper .mainPageSecond .label, .mainPageWrapper .mainPageSecond .label .arrow, .mainPageWrapper .mainPageThird .leftColumn .image, .mainPageWrapper .mainPageThird .leftColumn .image .nutrimentSmall, .mainPageWrapper .mainPageThird .leftColumn .nutriment, .mainPageWrapper .mainPageThird .rightColumn .nutrimentSmall.fruitRight, .mainPageWrapper .contacts, .mainPageWrapper .contacts .topStripe .curve {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.mainPageWrapper {
+  position: relative;
+  width: 100%; }
+  .mainPageWrapper .centered {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto; }
+  .mainPageWrapper h1 {
+    color: #048445;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.4; }
+  .mainPageWrapper .greenBtn {
+    color: #ffffff;
+    background: #3c880a;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.9375rem 2.5rem;
+    border-radius: 2.5rem;
+    position: relative; }
+    .mainPageWrapper .greenBtn .btnBackground {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: 0;
+      width: 95%;
+      height: 100%;
+      background: #006935;
+      z-index: -1;
+      border-radius: 2.5rem;
+      -webkit-transition: background 150ms ease-in-out 0s;
+      -moz-transition: background 150ms ease-in-out 0s;
+      transition: background 150ms ease-in-out 0s; }
+    .mainPageWrapper .greenBtn:hover {
+      cursor: pointer; }
+    .mainPageWrapper .greenBtn:hover .btnBackground {
+      background: #3c880a; }
+  .mainPageWrapper .whiteBtn {
+    color: #006935;
+    background: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.375rem;
+    padding: 1.5625rem 2.8125rem;
+    border-radius: 2.5rem;
+    position: relative;
+    -webkit-transition: all 150ms ease-in-out 0s;
+    -moz-transition: all 150ms ease-in-out 0s;
+    transition: all 150ms ease-in-out 0s; }
+    .mainPageWrapper .whiteBtn .btnBackground {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: 0;
+      width: 95%;
+      height: 100%;
+      background: #ffffff;
+      z-index: -1;
+      border-radius: 2.5rem;
+      -webkit-transition: all 150ms ease-in-out 0s;
+      -moz-transition: all 150ms ease-in-out 0s;
+      transition: all 150ms ease-in-out 0s; }
+    .mainPageWrapper .whiteBtn:hover {
+      cursor: pointer;
+      color: #ffffff;
+      background: rgba(60, 136, 10, 0.5); }
+    .mainPageWrapper .whiteBtn:hover .btnBackground {
+      background: #3c880a; }
+  .mainPageWrapper .mainPageSlide {
+    position: relative;
+    width: 100%;
+    height: 40.3125rem; }
+  .mainPageWrapper .mainPageFirst {
+    overflow: hidden; }
+    .mainPageWrapper .mainPageFirst .backgrounds {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%; }
+      .mainPageWrapper .mainPageFirst .backgrounds .gradient {
+        width: 100%;
+        height: 21.875rem;
+        position: relative;
+        background-color: #d8ecd8;
+        background-image: -webkit-linear-gradient(#d8ecd8, #deefe1, #e3f3e6, #eaf6ec, #f0f8f2, #f4f9f6, #f8fbf8, #fafcfa);
+        background-image: linear-gradient(#d8ecd8, #deefe1, #e3f3e6, #eaf6ec, #f0f8f2, #f4f9f6, #f8fbf8, #fafcfa); }
+      .mainPageWrapper .mainPageFirst .backgrounds .baseboard {
+        position: relative;
+        margin: -15px auto 0;
+        width: 100%;
+        background: url("/img/baseboard.png") repeat-x;
+        height: 112px; }
+      .mainPageWrapper .mainPageFirst .backgrounds .wood {
+        width: 100%;
+        max-width: 2295px;
+        height: 161px;
+        position: relative;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("/img/mainWoodBackground.png"); }
+    .mainPageWrapper .mainPageFirst .content {
+      width: 1024px;
+      margin: 0 auto;
+      height: 100%; }
+      .mainPageWrapper .mainPageFirst .content .column {
+        width: 50%;
+        height: 100%;
+        float: left; }
+      .mainPageWrapper .mainPageFirst .content .catImage {
+        width: 100%;
+        height: 100%;
+        background-image: url("/img/mainCat.png"); }
+      .mainPageWrapper .mainPageFirst .content .innerContent {
+        color: #333333;
+        line-height: 1.4;
+        margin-top: 6.25rem; }
+        .mainPageWrapper .mainPageFirst .content .innerContent h1 {
+          margin-bottom: 2.1875rem; }
+        .mainPageWrapper .mainPageFirst .content .innerContent .text {
+          font-size: 0.75rem;
+          line-height: 1.6;
+          width: 75%;
+          margin-bottom: 1.5625rem; }
+    .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout {
+      width: 149px;
+      height: 201px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -100px;
+      -webkit-transition: all 150ms ease-in-out 0s;
+      -moz-transition: all 150ms ease-in-out 0s;
+      transition: all 150ms ease-in-out 0s;
+      background-image: url("/img/catsKeepSilenceAbout.png"); }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout:hover .warped {
+        visibility: visible;
+        opacity: 1; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: -132px;
+        left: -200px;
+        display: block; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped > span[class^=w]:nth-of-type(n+0) {
+        display: block;
+        position: absolute;
+        -moz-transform-origin: 50% 100%;
+        -webkit-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        transform-origin: 50% 100%; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped span {
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: regular;
+        font-style: normal;
+        line-height: 0.65;
+        white-space: pre;
+        overflow: visible;
+        padding: 0px;
+        color: #048445; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w0 {
+        -moz-transform: rotate(-0.47rad);
+        -webkit-transform: rotate(-0.47rad);
+        -o-transform: rotate(-0.47rad);
+        -ms-transform: rotate(-0.47rad);
+        transform: rotate(-0.47rad);
+        width: 9px;
+        height: 7px;
+        left: 244.91px;
+        top: 123.48px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w1 {
+        -moz-transform: rotate(-0.4rad);
+        -webkit-transform: rotate(-0.4rad);
+        -o-transform: rotate(-0.4rad);
+        -ms-transform: rotate(-0.4rad);
+        transform: rotate(-0.4rad);
+        width: 5px;
+        height: 7px;
+        left: 253.28px;
+        top: 120.58px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w2 {
+        -moz-transform: rotate(-0.34rad);
+        -webkit-transform: rotate(-0.34rad);
+        -o-transform: rotate(-0.34rad);
+        -ms-transform: rotate(-0.34rad);
+        transform: rotate(-0.34rad);
+        width: 6px;
+        height: 7px;
+        left: 257.92px;
+        top: 118.62px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w3 {
+        -moz-transform: rotate(-0.29rad);
+        -webkit-transform: rotate(-0.29rad);
+        -o-transform: rotate(-0.29rad);
+        -ms-transform: rotate(-0.29rad);
+        transform: rotate(-0.29rad);
+        width: 5px;
+        height: 7px;
+        left: 263.66px;
+        top: 116.95px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w4 {
+        -moz-transform: rotate(-0.23rad);
+        -webkit-transform: rotate(-0.23rad);
+        -o-transform: rotate(-0.23rad);
+        -ms-transform: rotate(-0.23rad);
+        transform: rotate(-0.23rad);
+        width: 6px;
+        height: 7px;
+        left: 268.48px;
+        top: 115.56px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w5 {
+        -moz-transform: rotate(-0.17rad);
+        -webkit-transform: rotate(-0.17rad);
+        -o-transform: rotate(-0.17rad);
+        -ms-transform: rotate(-0.17rad);
+        transform: rotate(-0.17rad);
+        width: 6px;
+        height: 7px;
+        left: 274.36px;
+        top: 114.39px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w6 {
+        -moz-transform: rotate(-0.11rad);
+        -webkit-transform: rotate(-0.11rad);
+        -o-transform: rotate(-0.11rad);
+        -ms-transform: rotate(-0.11rad);
+        transform: rotate(-0.11rad);
+        width: 6px;
+        height: 7px;
+        left: 280.31px;
+        top: 113.57px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w7 {
+        -moz-transform: rotate(-0.07rad);
+        -webkit-transform: rotate(-0.07rad);
+        -o-transform: rotate(-0.07rad);
+        -ms-transform: rotate(-0.07rad);
+        transform: rotate(-0.07rad);
+        width: 3px;
+        height: 7px;
+        left: 286.29px;
+        top: 113.19px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w8 {
+        -moz-transform: rotate(-0.02rad);
+        -webkit-transform: rotate(-0.02rad);
+        -o-transform: rotate(-0.02rad);
+        -ms-transform: rotate(-0.02rad);
+        transform: rotate(-0.02rad);
+        width: 6px;
+        height: 7px;
+        left: 289.28px;
+        top: 113.01px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w9 {
+        -moz-transform: rotate(0.03rad);
+        -webkit-transform: rotate(0.03rad);
+        -o-transform: rotate(0.03rad);
+        -ms-transform: rotate(0.03rad);
+        transform: rotate(0.03rad);
+        width: 5px;
+        height: 7px;
+        left: 295.28px;
+        top: 113.07px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w10 {
+        -moz-transform: rotate(0.07rad);
+        -webkit-transform: rotate(0.07rad);
+        -o-transform: rotate(0.07rad);
+        -ms-transform: rotate(0.07rad);
+        transform: rotate(0.07rad);
+        width: 3px;
+        height: 7px;
+        left: 300.28px;
+        top: 113.3px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w11 {
+        -moz-transform: rotate(0.11rad);
+        -webkit-transform: rotate(0.11rad);
+        -o-transform: rotate(0.11rad);
+        -ms-transform: rotate(0.11rad);
+        transform: rotate(0.11rad);
+        width: 5px;
+        height: 7px;
+        left: 303.26px;
+        top: 113.69px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w12 {
+        -moz-transform: rotate(0.16rad);
+        -webkit-transform: rotate(0.16rad);
+        -o-transform: rotate(0.16rad);
+        -ms-transform: rotate(0.16rad);
+        transform: rotate(0.16rad);
+        width: 5px;
+        height: 7px;
+        left: 308.21px;
+        top: 114.4px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w13 {
+        -moz-transform: rotate(0.22rad);
+        -webkit-transform: rotate(0.22rad);
+        -o-transform: rotate(0.22rad);
+        -ms-transform: rotate(0.22rad);
+        transform: rotate(0.22rad);
+        width: 6px;
+        height: 7px;
+        left: 313.1px;
+        top: 115.47px; }
+      .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout .warped .w14 {
+        -moz-transform: rotate(0.27rad);
+        -webkit-transform: rotate(0.27rad);
+        -o-transform: rotate(0.27rad);
+        -ms-transform: rotate(0.27rad);
+        transform: rotate(0.27rad);
+        width: 5px;
+        height: 7px;
+        left: 318.93px;
+        top: 116.83px; }
+  .mainPageWrapper .mainPageSecond {
+    background-position: 50%;
+    background-image: url("/img/mainSecondBackground.jpg"); }
+    .mainPageWrapper .mainPageSecond .label {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 141px;
+      height: 25px;
+      background-image: url("/img/mainFirstLabel.png");
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .mainPageWrapper .mainPageSecond .label .arrow {
+        position: relative;
+        width: 25px;
+        height: 15px;
+        top: -15px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-image: url("/img/mainFirstLabelArrow.png"); }
+    .mainPageWrapper .mainPageSecond .content {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      margin-left: -11.875rem;
+      background: rgba(255, 255, 255, 0.92);
+      text-align: center;
+      width: 23.75rem;
+      padding: 2.5rem 2.1875rem 5rem;
+      border-radius: 6.25rem; }
+      .mainPageWrapper .mainPageSecond .content h1 {
+        margin-bottom: 1.875rem; }
+      .mainPageWrapper .mainPageSecond .content .text {
+        line-height: 1.9;
+        font-size: 0.75rem;
+        color: #333333; }
+      .mainPageWrapper .mainPageSecond .content .greenBtn {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translate(-50%, 50%);
+        -moz-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+        -o-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%); }
+    .mainPageWrapper .mainPageSecond .popup {
+      position: absolute;
+      height: 3.125rem;
+      width: 3.125rem; }
+      .mainPageWrapper .mainPageSecond .popup .closedLogo {
+        visibility: visible;
+        opacity: 1;
+        width: 3.125rem;
+        height: 3.125rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #f4d249;
+        background-image: url("/img/popupPaw.png");
+        -webkit-transition: all 150ms ease-in-out 0s;
+        -moz-transition: all 150ms ease-in-out 0s;
+        transition: all 150ms ease-in-out 0s; }
+        .mainPageWrapper .mainPageSecond .popup .closedLogo:hover {
+          cursor: pointer;
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1); }
+      .mainPageWrapper .mainPageSecond .popup.active .popupContent {
+        visibility: visible;
+        opacity: 1; }
+      .mainPageWrapper .mainPageSecond .popup.active .closedLogo {
+        visibility: hidden;
+        opacity: 0; }
+      .mainPageWrapper .mainPageSecond .popup .popupContent {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        height: 3.125rem;
+        width: 3.125rem;
+        top: 0;
+        left: 0;
+        -webkit-transition: all 150ms ease-in-out 0s;
+        -moz-transition: all 150ms ease-in-out 0s;
+        transition: all 150ms ease-in-out 0s; }
+        .mainPageWrapper .mainPageSecond .popup .popupContent .popupClose {
+          position: absolute;
+          width: 2.1875rem;
+          height: 2.1875rem;
+          top: 50%;
+          margin-top: -1.09375rem;
+          left: 50%;
+          margin-left: -1.09375rem;
+          border-radius: 50%;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-color: #f4d249;
+          background-image: url("/img/popupClose.png");
+          z-index: 1; }
+          .mainPageWrapper .mainPageSecond .popup .popupContent .popupClose:hover {
+            cursor: pointer; }
+        .mainPageWrapper .mainPageSecond .popup .popupContent .popupText {
+          position: absolute;
+          bottom: 1.09375rem;
+          left: -100px;
+          border-radius: 50%;
+          background-color: #f4d249;
+          color: #ffffff;
+          text-align: center;
+          font-size: 0.75rem;
+          line-height: 1.9;
+          width: 15.625rem;
+          height: 15.625rem; }
+          .mainPageWrapper .mainPageSecond .popup .popupContent .popupText .popupTextWrapper {
+            width: 100%;
+            top: 50%;
+            position: absolute;
+            padding: 0 1.875rem;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .mainPageWrapper .mainPageSecond .popup1 {
+      left: -20.625rem;
+      top: 6.25rem; }
+    .mainPageWrapper .mainPageSecond .popup2 {
+      left: -13.125rem;
+      bottom: -2.8125rem; }
+    .mainPageWrapper .mainPageSecond .popup3 {
+      right: -17.8125rem;
+      bottom: -2.8125rem; }
+  .mainPageWrapper .mainPageThird {
+    background-position: 50%;
+    background-repeat-x: no-repeat;
+    background-image: url("/img/mainThirdBackground.jpg"); }
+    .mainPageWrapper .mainPageThird .wrap {
+      width: 1024px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+    .mainPageWrapper .mainPageThird .leftColumn {
+      width: 26.5625rem;
+      float: left;
+      height: 100%;
+      position: relative; }
+      .mainPageWrapper .mainPageThird .leftColumn .image {
+        position: absolute;
+        top: 6.0625rem;
+        left: 2.75rem;
+        width: 30.75rem;
+        height: 27.5625rem;
+        background-image: url("/img/mainFormula.png");
+        z-index: 1; }
+        .mainPageWrapper .mainPageThird .leftColumn .image .description {
+          position: absolute; }
+          .mainPageWrapper .mainPageThird .leftColumn .image .description:hover .descContent {
+            visibility: visible;
+            opacity: 1;
+            cursor: pointer; }
+          .mainPageWrapper .mainPageThird .leftColumn .image .description.small {
+            top: 7.5625rem;
+            left: 0;
+            width: 10rem;
+            height: 10rem; }
+          .mainPageWrapper .mainPageThird .leftColumn .image .description.medium {
+            bottom: 0;
+            right: 6.5rem;
+            width: 11.5625rem;
+            height: 11.5625rem; }
+          .mainPageWrapper .mainPageThird .leftColumn .image .description.large {
+            top: 0;
+            right: 0;
+            width: 12.5rem;
+            height: 12.5rem; }
+          .mainPageWrapper .mainPageThird .leftColumn .image .description .descContent {
+            visibility: hidden;
+            opacity: 0;
+            border-radius: 50%;
+            background-color: #00873c;
+            background-image: -webkit-linear-gradient(#00873c, #007037);
+            background-image: linear-gradient(#00873c, #007037);
+            color: #ffffff;
+            text-align: center;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 150ms ease-in-out 0s;
+            -moz-transition: all 150ms ease-in-out 0s;
+            transition: all 150ms ease-in-out 0s; }
+            .mainPageWrapper .mainPageThird .leftColumn .image .description .descContent .text {
+              position: absolute;
+              top: 50%;
+              width: 100%;
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+              transform: translateY(-50%); }
+        .mainPageWrapper .mainPageThird .leftColumn .image .nutrimentSmall {
+          position: absolute; }
+          .mainPageWrapper .mainPageThird .leftColumn .image .nutrimentSmall.milk {
+            width: 116px;
+            height: 62px;
+            bottom: 135px;
+            left: 227px;
+            background-image: url("/img/mainNutrimentMilk.png"); }
+          .mainPageWrapper .mainPageThird .leftColumn .image .nutrimentSmall.meat {
+            width: 85px;
+            height: 79px;
+            top: 80px;
+            left: 65px;
+            background-image: url("/img/mainNutrimentMeat.png"); }
+          .mainPageWrapper .mainPageThird .leftColumn .image .nutrimentSmall.fruit {
+            width: 73px;
+            height: 62px;
+            right: 117px;
+            top: -25px;
+            background-image: url("/img/mainNutrimentFruit.png"); }
+      .mainPageWrapper .mainPageThird .leftColumn .nutriment {
+        position: absolute;
+        top: 0;
+        left: -21.25rem;
+        width: 55rem;
+        height: 39.25rem;
+        background-image: url("/img/mainNutriment.png"); }
+    .mainPageWrapper .mainPageThird .rightColumn {
+      width: 26.5625rem;
+      float: right;
+      height: 100%; }
+      .mainPageWrapper .mainPageThird .rightColumn .thirdContent {
+        margin-top: 10rem;
+        padding: 0 0.4375rem; }
+        .mainPageWrapper .mainPageThird .rightColumn .thirdContent h1 {
+          line-height: 1.2;
+          margin-bottom: 1.5625rem; }
+        .mainPageWrapper .mainPageThird .rightColumn .thirdContent .text {
+          font-size: 0.75rem;
+          line-height: 1.9;
+          width: 19.375rem;
+          margin-bottom: 2.5rem; }
+      .mainPageWrapper .mainPageThird .rightColumn .nutrimentSmall.fruitRight {
+        position: absolute;
+        width: 108px;
+        height: 121px;
+        right: -141px;
+        top: 248px;
+        background-image: url("/img/mainNutrimentFruitRight.png"); }
+    .mainPageWrapper .mainPageThird .greenBtn {
+      position: relative;
+      z-index: 1;
+      float: left; }
+  .mainPageWrapper .mainPageFourth .backgrounds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+    .mainPageWrapper .mainPageFourth .backgrounds .white {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      width: 100%;
+      height: 30.625rem; }
+    .mainPageWrapper .mainPageFourth .backgrounds .gradient {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #d9ecdc;
+      background-image: -webkit-linear-gradient(#d9ecdc, #e3f1e6, #f3f9f4, #ffffff, #ffffff);
+      background-image: linear-gradient(#d9ecdc, #e3f1e6, #f3f9f4, #ffffff, #ffffff);
+      width: 100%;
+      height: 9.6875rem; }
+    .mainPageWrapper .mainPageFourth .backgrounds .centered {
+      height: 100%; }
+      .mainPageWrapper .mainPageFourth .backgrounds .centered .nutriment {
+        position: absolute;
+        width: 19.8125rem;
+        height: 28rem;
+        background-image: url("/img/mainNutriment2.png");
+        left: 20.625rem;
+        top: 0.3125rem;
+        z-index: 1; }
+      .mainPageWrapper .mainPageFourth .backgrounds .centered .cat {
+        position: absolute;
+        width: 48.5625rem;
+        height: 34.875rem;
+        background-image: url("/img/mainCat2.png");
+        right: -15.9375rem;
+        top: 3.4375rem; }
+  .mainPageWrapper .mainPageFourth .centered {
+    height: 100%; }
+  .mainPageWrapper .mainPageFourth .fourthContent {
+    position: absolute;
+    bottom: 9.6875rem;
+    margin-bottom: -1.5625rem; }
+    .mainPageWrapper .mainPageFourth .fourthContent h1 {
+      line-height: 1.2;
+      margin-bottom: 1.5625rem; }
+    .mainPageWrapper .mainPageFourth .fourthContent .text {
+      font-size: 0.75rem;
+      line-height: 1.9;
+      width: 19.375rem;
+      margin-bottom: 2.5rem; }
+    .mainPageWrapper .mainPageFourth .fourthContent .greenBtn {
+      float: left;
+      position: relative;
+      z-index: 1; }
+  .mainPageWrapper .mainPageFifth {
+    overflow: hidden; }
+    .mainPageWrapper .mainPageFifth .backgrounds {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%; }
+      .mainPageWrapper .mainPageFifth .backgrounds .gradient {
+        width: 100%;
+        height: 21.875rem;
+        position: relative;
+        background-color: #f4f1e2;
+        background-image: -webkit-linear-gradient(#f4f1e2, #f4f1e2, #f5f2e4, #f5f2e3, #f4f1e6);
+        background-image: linear-gradient(#f4f1e2, #f4f1e2, #f5f2e4, #f5f2e3, #f4f1e6); }
+      .mainPageWrapper .mainPageFifth .backgrounds .baseboard {
+        position: relative;
+        margin: -15px auto 0;
+        width: 100%;
+        background: url("/img/baseboard.png") repeat-x;
+        height: 112px; }
+      .mainPageWrapper .mainPageFifth .backgrounds .wood {
+        width: 100%;
+        max-width: 2295px;
+        height: 161px;
+        position: relative;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("/img/mainWoodBackground.png"); }
+    .mainPageWrapper .mainPageFifth .content {
+      width: 1024px;
+      margin: 0 auto;
+      height: 100%; }
+      .mainPageWrapper .mainPageFifth .content .bx-wrapper {
+        height: 100%; }
+        .mainPageWrapper .mainPageFifth .content .bx-wrapper .bx-viewport {
+          height: 100%; }
+      .mainPageWrapper .mainPageFifth .content .bx-controls-direction button {
+        color: #b4af9a;
+        -webkit-transition: color 150ms ease-in-out 0s, -webkit-transform 150ms ease-in-out 0s;
+        -moz-transition: color 150ms ease-in-out 0s, -moz-transform 150ms ease-in-out 0s;
+        transition: color 150ms ease-in-out 0s, transform 150ms ease-in-out 0s; }
+        .mainPageWrapper .mainPageFifth .content .bx-controls-direction button:hover {
+          color: #006935;
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          transform: scale(1.2); }
+      .mainPageWrapper .mainPageFifth .content .bx-next {
+        right: -5rem; }
+      .mainPageWrapper .mainPageFifth .content .bx-prev {
+        left: -5rem; }
+      .mainPageWrapper .mainPageFifth .content .leftColumn {
+        width: 50%;
+        height: 100%;
+        float: left; }
+      .mainPageWrapper .mainPageFifth .content .rightColumn {
+        width: 26.5625rem;
+        float: right;
+        height: 100%; }
+      .mainPageWrapper .mainPageFifth .content .products {
+        height: 100%; }
+        .mainPageWrapper .mainPageFifth .content .products .productItem {
+          height: 100%; }
+          .mainPageWrapper .mainPageFifth .content .products .productItem .greenBtn {
+            z-index: 1;
+            float: left;
+            position: relative; }
+      .mainPageWrapper .mainPageFifth .content .image {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("/img/mainProducts.png"); }
+      .mainPageWrapper .mainPageFifth .content .innerContent {
+        color: #333333;
+        line-height: 1.4;
+        margin-top: 5.625rem; }
+        .mainPageWrapper .mainPageFifth .content .innerContent h1 {
+          line-height: 1.2;
+          margin-bottom: 2.1875rem; }
+        .mainPageWrapper .mainPageFifth .content .innerContent h3 {
+          font-weight: normal;
+          font-size: 1.125rem;
+          margin-bottom: 0.625rem;
+          color: #048445; }
+        .mainPageWrapper .mainPageFifth .content .innerContent .text {
+          font-size: 0.75rem;
+          line-height: 1.6;
+          width: 75%;
+          margin-bottom: 2.1875rem; }
+  .mainPageWrapper .contacts {
+    position: relative;
+    width: 100%;
+    height: 13.125rem;
+    background-image: url("/img/mainContactsBg.jpg"); }
+    .mainPageWrapper .contacts .topStripe {
+      width: 100%;
+      height: 1.625rem;
+      position: relative;
+      overflow: hidden; }
+      .mainPageWrapper .contacts .topStripe .curve {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -7.90625rem;
+        width: 15.8125rem;
+        height: 100%;
+        background-image: url("/img/mainContactsCurve.png"); }
+        .mainPageWrapper .contacts .topStripe .curve .leftStripe {
+          position: absolute;
+          width: 9999px;
+          background: #ffffff;
+          right: 15.8125rem;
+          height: 100%; }
+        .mainPageWrapper .contacts .topStripe .curve .rightStripe {
+          position: absolute;
+          width: 9999px;
+          background: #ffffff;
+          left: 15.8125rem;
+          height: 100%; }
+    .mainPageWrapper .contacts .whiteBtn {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      z-index: 1;
+      top: 10px; }
+
+/*# sourceMappingURL=simplePage.css.map */

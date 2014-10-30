@@ -1,0 +1,51 @@
+<div class="right-side" {{#is display 'set'}}style="display: none;"{{/is}}>
+    <div class="content-header">
+        <h3 class="content-title clearfix">
+            Список изображений
+
+            <div class="pull-right btn btn-primary addGalleryImage">
+                <i class="fa fa-plus"></i>
+                &nbsp;Добавить
+            </div>
+        </h3>
+    </div>
+    <div class="content">
+        {{#if galleryImages.isResolved}}
+            {{#if galleryImages.length}}
+                <table class='table table-striped'>
+                    <thead>
+                    <tr>
+                        <th>Картинка</th>
+                        <th>Действия</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {{#each galleryImages}}
+                            <tr class="galleryImage" {{data "galleryImages"}}>
+                                <td>{{img}}</td>
+                                <td>
+                                    <div class="btn btn-sm btn-default editGalleryImage">
+                                        <i class="fa fa-pencil"></i>
+                                    </div>
+                                    <div class="btn btn-sm btn-danger removeGalleryImage">
+                                        <i class="fa fa-trash-o"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+
+            {{else}}
+                <div class="alert alert-info">
+                    <i class="fa fa-info"></i>
+                    <b>Примечание! </b>
+                    Ни одной записи еще не добавлено!
+                </div>
+            {{/if}}
+        {{/if}}
+    </div>
+</div>
+<div class="galleryImageForm" {{#is display 'list'}}style="display: none;"{{/is}}>
+
+</div>

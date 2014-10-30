@@ -1,0 +1,50 @@
+@import '../base/fonts';
+
+html {
+	overflow-y: scroll;
+}
+
+.left-side {
+	z-index: 2;
+}
+
+.right-side {
+	.right-side {
+		margin: 0;
+	}
+}
+
+.navTabs,
+.addInnerPage {
+	margin-bottom: 20px;
+}
+
+.table>thead>tr>td.info, .table>tbody>tr>td.info, .table>tfoot>tr>td.info, .table>thead>tr>th.info, .table>tbody>tr>th.info, .table>tfoot>tr>th.info, .table>thead>tr.info>td, .table>tbody>tr.info>td, .table>tfoot>tr.info>td, .table>thead>tr.info>th, .table>tbody>tr.info>th, .table>tfoot>tr.info>th {
+	background-color: #d9edf7;
+}
+
+.table>thead>tr>td.danger, .table>tbody>tr>td.danger, .table>tfoot>tr>td.danger, .table>thead>tr>th.danger, .table>tbody>tr>th.danger, .table>tfoot>tr>th.danger, .table>thead>tr.danger>td, .table>tbody>tr.danger>td, .table>tfoot>tr.danger>td, .table>thead>tr.danger>th, .table>tbody>tr.danger>th, .table>tfoot>tr.danger>th {
+	background-color: #f2dede;
+}
+
+.wysihtml5-sandbox {
+	min-height: 500px !important;
+}
+
+.uploadedFile {
+	@include transition(all 0.2s linear 0s);
+	
+	&:hover {
+		color: #6495ED;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+}
+
+
+@import 'cosmetics/_cover.scss';
+@import 'cosmetics/_frame.scss';
+@import 'cosmetics/_preview.scss';
+@import 'cosmetics/_popUp.scss';
+

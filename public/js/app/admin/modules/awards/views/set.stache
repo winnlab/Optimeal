@@ -1,0 +1,83 @@
+<div class="content-header">
+    <h3 class="content-title clearfix">
+        {{#if decoration._id}}
+            Редактирование
+        {{else}}
+            Добавление
+        {{/if}}
+        <div class="pull-right btn btn-primary toList">
+            Назад
+        </div>
+    </h3>
+
+</div>
+<div class="content">
+    <div class="col-md-12">
+        <div class="box box-primary">
+
+            <div class="box-body clearfix">
+
+                <div class="col-md-12">
+                    <form class="form-horizontal setAward">
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Год:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{award.year}}" name="year" placeholder="Год" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <tabs>
+                            {{#each langs}}
+                                <panel name="{{name}}">
+                                    <input type="hidden" value="{{_id}}" name="lang[{{@index}}]languageId">
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="title">Заголовок:</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control" type="text" value="{{getArrayObjValue award.lang @index 'title'}}" name="lang[{{@index}}]title" placeholder="Заголовок">
+                                            <div class="help help-block"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="text">Содержание:</label>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" {{wysihtml5}} name="lang[{{@index}}]content" placeholder="Содержание">{{getArrayObjValue award.lang @index 'content'}}</textarea>
+                                            <div class="help help-block"></div>
+                                        </div>
+                                    </div>
+                                </panel>
+                            {{/each}}
+                        </tabs>
+
+                        {{#if award._id}}
+                            <upload
+                                    class="col-md-12"
+                                    name="img"
+                                    url="/admin/award/img"
+                                    delete-url="/admin/award/img"
+                                    entity="{award}"
+                                    uploaded="{award.img}"
+                                    accept="image/*"
+                                    >
+                                Загрузить Картинку
+                            </upload>
+                        {{/if}}
+
+                        <button class="btn btn-primary col-md-offset-2" type="submit">
+                            {{#if award._id}}
+                                Сохранить
+                            {{else}}
+                                Добавить
+                            {{/if}}
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="right-side" {{#is display 'set'}}style="display: none;"{{/is}}>
+    <div class="content-header">
+        <h3 class="content-title clearfix">
+            Список категорий товаров
+
+            <div class="pull-right btn btn-primary addProductCategory">
+                <i class="fa fa-plus"></i>
+                &nbsp;Добавить
+            </div>
+        </h3>
+    </div>
+    <div class="content">
+        {{#if productCategories.isResolved}}
+            {{#if productCategories.length}}
+                <table class='table table-striped'>
+                    <thead>
+                    <tr>
+                        <th>Позиция</th>
+                        <th>Альт. отображение</th>
+                        <th>Картинки</th>
+                        <th>Действия</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {{#each productCategories}}
+                            <tr class="productCategory" {{data "productCategories"}}>
+                                <td>{{position}}</td>
+                                <td>{{view}}</td>
+                                <td>
+                                    <img src="{{img.main}}" alt=""/>
+                                    <img src="{{img.product}}" alt=""/>
+                                </td>
+                                <td>
+                                    <div class="btn btn-sm btn-default editProductCategory">
+                                        <i class="fa fa-pencil"></i>
+                                    </div>
+                                    <div class="btn btn-sm btn-danger removeProductCategory">
+                                        <i class="fa fa-trash-o"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+
+            {{else}}
+                <div class="alert alert-info">
+                    <i class="fa fa-info"></i>
+                    <b>Примечание! </b>
+                    Ни одной записи еще не добавлено!
+                </div>
+            {{/if}}
+        {{/if}}
+    </div>
+</div>
+<div class="productCategoryForm" {{#is display 'list'}}style="display: none;"{{/is}}>
+
+</div>

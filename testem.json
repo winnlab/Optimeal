@@ -1,0 +1,16 @@
+{
+	"framework": "mocha",
+	"launchers": {
+		"Mocha": {
+			"command": "make test"
+		}
+	},
+	"launch_in_dev": [
+		"Mocha"
+	],
+	"src_files": [
+		"**/*.coffee",
+		"**/**/*.coffee",
+		"**/**/**/*.coffee"
+	]	
+}

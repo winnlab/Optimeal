@@ -1,0 +1,33 @@
+<footer id="footer">
+
+    <div class="content">
+
+        <a class="logo">
+            <img src="{{appState.imgPath}}footerLogo.jpg" alt=""/>
+        </a>
+
+        <div class="footerContent">
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="">{{appState.locale.whyOptimeal}}</a></li>
+                    <li><a href="">{{appState.locale.aboutImmunity}}</a></li>
+                    <li><a href="">{{appState.locale.catalogue}}</a></li>
+                    <li><a href="">{{appState.locale.production}}</a></li>
+                    <li><a href="">{{appState.locale.encyclopedia}}</a></li>
+                    <li><a href="">{{appState.locale.contacts}}</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <nav class="social">
+            <ul>
+                <li><a class="fbIcon" href="http://www.fb.com"></a></li>
+                <li><a class="vkIcon" href="http://www.vk.com"></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</footer>

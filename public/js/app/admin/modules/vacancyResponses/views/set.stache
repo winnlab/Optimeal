@@ -1,0 +1,103 @@
+<div class="content-header">
+    <h3 class="content-title clearfix">
+        {{#if vacancyResponse._id}}
+            Редактирование
+        {{else}}
+            Добавление
+        {{/if}}
+        <div class="pull-right btn btn-primary toList">
+            Назад
+        </div>
+    </h3>
+
+</div>
+<div class="content">
+    <div class="col-md-12">
+        <div class="box box-primary">
+
+            <div class="box-body clearfix">
+
+                <div class="col-md-12">
+                    <form class="form-horizontal setVacancyResponse">
+
+                        {{#if vacancyResponse.Vacancy}}
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="name">Вакансии:</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" name="vacancy">
+                                        {{{renderVacanciesOptions vacancyResponse.Vacancy vacancyResponse.vacancy}}}
+                                    </select>
+                                    <div class="help help-block"></div>
+                                </div>
+                            </div>
+                        {{/if}}
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Имя:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{vacancyResponse.name}}" name="name" placeholder="Имя" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Фамилия:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{vacancyResponse.surname}}" name="surname" placeholder="Фамилия" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Email:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{vacancyResponse.email}}" name="email" placeholder="Email" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Телефон:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{vacancyResponse.phone}}" name="phone" placeholder="Телефон" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Комментарий:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{vacancyResponse.commentary}}" name="commentary" placeholder="Комментарий" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        {{#if vacancyResponse._id}}
+                            <upload
+                                    class="col-md-12"
+                                    name="cv"
+                                    url="/admin/vacancyResponse/cv"
+                                    delete-url="/admin/vacancyResponse/cv"
+                                    entity="{vacancyResponse}"
+                                    uploaded="{vacancyResponse.cv}"
+                                    accept="*"
+                                    >
+                                Загрузить CV
+                            </upload>
+                        {{/if}}
+
+                        <button class="btn btn-primary col-md-offset-2" type="submit">
+                            {{#if vacancyResponse._id}}
+                                Сохранить
+                            {{else}}
+                                Добавить
+                            {{/if}}
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

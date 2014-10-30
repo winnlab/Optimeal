@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import '../bourbon/_bourbon.scss';
+@import '../base/_mixins.scss';
+@import '../base/_placeholders.scss';
+@import '../base/_variables.scss';
+@import '../base/_fonts.scss';
+@import '../base/_sprites.scss';
+
+@import '../../js/lib/fontawesome/scss/font-awesome.scss';
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.social {
+	float: right;
+	height: 100%;
+	margin-right: rem(40);
+
+	a {
+		margin: 0 rem(10);
+	}
+	.fbIcon {
+		@include sprite($fbIcon);
+
+		&:hover {
+			@include sprite-position($fbIconActive);
+		}
+	}
+	.vkIcon {
+		@include sprite($vkIcon);
+
+		&:hover {
+			@include sprite-position($vkIconActive);
+		}
+	}
+}

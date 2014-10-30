@@ -1,0 +1,274 @@
+<div class="mainPageWrapper">
+
+
+    <div class="mainPageFirst mainPageSlide">
+
+        <div class="backgrounds">
+
+            <div class="gradient"></div>
+            <div class="baseboard"></div>
+            <div class="wood"></div>
+            <div class="color"></div>
+
+        </div>
+
+        <div class="content">
+
+            <div class="column">
+                <div class="catImage"></div>
+            </div>
+
+            <div class="column">
+
+                <div class="innerContent">
+                    <h1>{{{appState.locale.main.first.title}}}</h1>
+                    <div class="text">
+                        {{appState.locale.main.first.content}}
+                    </div>
+                    <img src="{{appState.imgPath}}mainProductsLogo.png" alt=""/>
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="catsKeepSilenceAbout">
+            <div class='warped'>
+                <span class='w0'>П</span><span class='w1'>е</span><span class='w2'>р</span><span class='w3'>е</span><span class='w4'>х</span><span class='w5'>о</span><span class='w6'>д</span><span class='w7'> </span><span class='w8'>н</span><span class='w9'>а</span><span class='w10'> </span><span class='w11'>с</span><span class='w12'>а</span><span class='w13'>й</span><span class='w14'>т</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="mainPageSecond mainPageSlide">
+
+        <div class="label">
+            <div class="arrow"></div>
+        </div>
+
+        <div class="content">
+            <h1>{{{appState.locale.main.second.title}}}</h1>
+            <div class="text">
+                {{appState.locale.main.second.content}}
+            </div>
+
+            <div class="greenBtn">
+                {{appState.locale.moreInfo}}
+                <div class="btnBackground"></div>
+            </div>
+
+            <div class="popup popup1">
+                <div class="closedLogo"></div>
+                <div class="popupContent">
+                    <div class="popupClose"></div>
+                    <div class="popupText">
+                        <div class="popupTextWrapper">{{appState.locale.popups.first}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup popup2">
+                <div class="closedLogo"></div>
+                <div class="popupContent">
+                    <div class="popupClose"></div>
+                    <div class="popupText">
+                        <div class="popupTextWrapper">{{appState.locale.popups.first}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup popup3">
+                <div class="closedLogo"></div>
+                <div class="popupContent">
+                    <div class="popupClose"></div>
+                    <div class="popupText">
+                        <div class="popupTextWrapper">{{appState.locale.popups.first}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mainPageThird mainPageSlide">
+
+        <div class="wrap">
+
+            <div class="leftColumn">
+                <div class="image">
+                    <div class="description small">
+                        <div class="descContent"><div class="text">{{{appState.locale.main.third.small}}}</div></div>
+                    </div>
+                    <div class="description medium">
+                        <div class="descContent"><div class="text">{{{appState.locale.main.third.medium}}}</div></div>
+                    </div>
+                    <div class="description large">
+                        <div class="descContent"><div class="text">{{{appState.locale..main.third.large}}}</div></div>
+                    </div>
+                    <div class="nutrimentSmall milk"></div>
+                    <div class="nutrimentSmall meat"></div>
+                    <div class="nutrimentSmall fruit"></div>
+                </div>
+                <div class="nutriment"></div>
+            </div>
+
+            <div class="rightColumn">
+                <div class="thirdContent">
+                    <h1>{{{appState.locale.main.third.title}}}</h1>
+                    <div class="text">{{appState.locale.main.third.content}}</div>
+                    <div class="greenBtn">
+                        {{appState.locale.moreInfo}}
+                        <div class="btnBackground"></div>
+                    </div>
+                </div>
+
+                <div class="nutrimentSmall fruitRight"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mainPageFourth mainPageSlide">
+
+        <div class="backgrounds">
+            <div class="white"></div>
+            <div class="gradient"></div>
+            <div class="centered">
+                <div class="nutriment"></div>
+                <div class="cat"></div>
+            </div>
+        </div>
+
+        <div class="centered">
+            <div class="fourthContent">
+                <h1>{{{appState.locale.main.fourth.title}}}</h1>
+                <div class="text">{{appState.locale.main.fourth.content}}</div>
+                <div class="greenBtn">
+                    {{appState.locale.moreInfo}}
+                    <div class="btnBackground"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mainPageFifth mainPageSlide">
+
+        <div class="backgrounds">
+
+            <div class="gradient"></div>
+            <div class="baseboard"></div>
+            <div class="wood"></div>
+            <div class="color"></div>
+
+        </div>
+
+        <div class="content">
+
+            <div class="products">
+
+                <div class="productItem">
+
+                    <div class="leftColumn">
+                        <div class="image"></div>
+                    </div>
+
+                    <div class="rightColumn">
+
+                        <div class="innerContent">
+                            <h3>{{{appState.locale.main.fifth.subtitle}}}</h3>
+                            <h1>{{{appState.locale.main.fifth.title}}}</h1>
+                            <div class="text">
+                                {{appState.locale.main.fifth.content}}
+                            </div>
+                            <div class="greenBtn">
+                                {{appState.locale.toCatalogue}}
+                                <div class="btnBackground"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="productItem">
+
+                    <div class="leftColumn">
+                        <div class="image"></div>
+                    </div>
+
+                    <div class="rightColumn">
+
+                        <div class="innerContent">
+                            <h3>{{{appState.locale.main.fifth.subtitle}}}</h3>
+                            <h1>{{{appState.locale.main.fifth.title}}}</h1>
+                            <div class="text">
+                                {{appState.locale.main.fifth.content}}
+                            </div>
+                            <div class="greenBtn">
+                                {{appState.locale.toCatalogue}}
+                                <div class="btnBackground"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="productItem">
+
+                    <div class="leftColumn">
+                        <div class="image"></div>
+                    </div>
+
+                    <div class="rightColumn">
+
+                        <div class="innerContent">
+                            <h3>{{{appState.locale.main.fifth.subtitle}}}</h3>
+                            <h1>{{{appState.locale.main.fifth.title}}}</h1>
+                            <div class="text">
+                                {{appState.locale.main.fifth.content}}
+                            </div>
+                            <div class="greenBtn">
+                                {{appState.locale.toCatalogue}}
+                                <div class="btnBackground"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contacts">
+
+        <div class="topStripe">
+            <div class="curve">
+                <div class="leftStripe"></div>
+                <div class="rightStripe"></div>
+            </div>
+        </div>
+
+        <div class="whiteBtn">
+            {{appState.locale.whereToBuy}}
+            <div class="btnBackground"></div>
+        </div>
+
+    </div>
+
+</div>

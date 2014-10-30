@@ -1,0 +1,87 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$fbIcon-x: 0px;
+$fbIcon-y: 0px;
+$fbIcon-offset-x: 0px;
+$fbIcon-offset-y: 0px;
+$fbIcon-width: 23px;
+$fbIcon-height: 22px;
+$fbIcon-total-width: 46px;
+$fbIcon-total-height: 44px;
+$fbIcon-image: '../../img/spritesheet.png';
+$fbIcon: 0px 0px 0px 0px 23px 22px 46px 44px '../../img/spritesheet.png';
+$fbIconActive-x: 23px;
+$fbIconActive-y: 0px;
+$fbIconActive-offset-x: -23px;
+$fbIconActive-offset-y: 0px;
+$fbIconActive-width: 23px;
+$fbIconActive-height: 22px;
+$fbIconActive-total-width: 46px;
+$fbIconActive-total-height: 44px;
+$fbIconActive-image: '../../img/spritesheet.png';
+$fbIconActive: 23px 0px -23px 0px 23px 22px 46px 44px '../../img/spritesheet.png';
+$vkIcon-x: 0px;
+$vkIcon-y: 22px;
+$vkIcon-offset-x: 0px;
+$vkIcon-offset-y: -22px;
+$vkIcon-width: 23px;
+$vkIcon-height: 22px;
+$vkIcon-total-width: 46px;
+$vkIcon-total-height: 44px;
+$vkIcon-image: '../../img/spritesheet.png';
+$vkIcon: 0px 22px 0px -22px 23px 22px 46px 44px '../../img/spritesheet.png';
+$vkIconActive-x: 23px;
+$vkIconActive-y: 22px;
+$vkIconActive-offset-x: -23px;
+$vkIconActive-offset-y: -22px;
+$vkIconActive-width: 23px;
+$vkIconActive-height: 22px;
+$vkIconActive-total-width: 46px;
+$vkIconActive-total-height: 44px;
+$vkIconActive-image: '../../img/spritesheet.png';
+$vkIconActive: 23px 22px -23px -22px 23px 22px 46px 44px '../../img/spritesheet.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

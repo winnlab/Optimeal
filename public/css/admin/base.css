@@ -1,0 +1,800 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400&subset=latin,cyrillic);
+.coverImgTbl .coverImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+html {
+  overflow-y: scroll; }
+
+.left-side {
+  z-index: 2; }
+
+.right-side .right-side {
+  margin: 0; }
+
+.navTabs,
+.addInnerPage {
+  margin-bottom: 20px; }
+
+.table > thead > tr > td.info, .table > tbody > tr > td.info, .table > tfoot > tr > td.info, .table > thead > tr > th.info, .table > tbody > tr > th.info, .table > tfoot > tr > th.info, .table > thead > tr.info > td, .table > tbody > tr.info > td, .table > tfoot > tr.info > td, .table > thead > tr.info > th, .table > tbody > tr.info > th, .table > tfoot > tr.info > th {
+  background-color: #d9edf7; }
+
+.table > thead > tr > td.danger, .table > tbody > tr > td.danger, .table > tfoot > tr > td.danger, .table > thead > tr > th.danger, .table > tbody > tr > th.danger, .table > tfoot > tr > th.danger, .table > thead > tr.danger > td, .table > tbody > tr.danger > td, .table > tfoot > tr.danger > td, .table > thead > tr.danger > th, .table > tbody > tr.danger > th, .table > tfoot > tr.danger > th {
+  background-color: #f2dede; }
+
+.wysihtml5-sandbox {
+  min-height: 500px !important; }
+
+.uploadedFile {
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s; }
+  .uploadedFile:hover {
+    color: #6495ED;
+    text-decoration: underline;
+    cursor: pointer; }
+
+.coverImgTbl .coverImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.coverImgTbl > tbody > tr > td {
+  vertical-align: middle; }
+.coverImgTbl .coverImage {
+  height: 70px;
+  width: 70px;
+  display: inline-block; }
+
+.coverImgTbl .coverImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.leftPanel {
+  position: absolute;
+  top: 140px;
+  left: -176px;
+  height: 340px;
+  width: 164px;
+  z-index: 1;
+  text-shadow: -1px -1px 0 #c58730; }
+  .small .leftPanel {
+    left: 18px; }
+  .leftPanel .taleBtnWrap {
+    display: block;
+    margin-bottom: 9px;
+    border-radius: 6px; }
+    .leftPanel .taleBtnWrap .taleBtn {
+      padding: 5px 4px 5px;
+      float: none;
+      margin-bottom: 1px;
+      font-weight: bold;
+      font-size: 17px; }
+      .leftPanel .taleBtnWrap .taleBtn:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .leftPanel .taleBtnWrap .taleBtn .title {
+        margin-bottom: 8px;
+        position: relative; }
+  .leftPanel .hero {
+    display: block;
+    float: left;
+    width: 62px;
+    height: 62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    margin: 0 4px 5px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.3); }
+
+.authorText {
+  position: absolute;
+  top: 110px;
+  left: 236px;
+  width: 752px;
+  height: 86px;
+  display: none;
+  z-index: 1; }
+  .authorText:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -17px;
+    z-index: -1;
+    height: 117px;
+    width: 787px;
+    background: url("/img/authorText.png"); }
+  .authorText.active {
+    display: block; }
+  .authorText textarea {
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    background: none; }
+
+.taleZone .displayFrame .chooseMusic {
+  bottom: -95px;
+  left: -176px;
+  z-index: 1; }
+  .small .taleZone .displayFrame .chooseMusic {
+    bottom: 35px;
+    left: 14px; }
+
+.btmPanel {
+  position: absolute;
+  bottom: -119px;
+  left: 326px;
+  z-index: 1; }
+  .small .btmPanel {
+    bottom: 4px; }
+  .btmPanel .taleBtnWrap {
+    border-radius: 7px;
+    padding: 7px 22px; }
+  .btmPanel .taleBtn {
+    border-radius: 5px;
+    padding: 7px 8px 5px; }
+  .btmPanel .item {
+    float: left; }
+  .btmPanel .frame {
+    position: relative;
+    display: block;
+    float: left;
+    height: 65px;
+    width: 83px;
+    margin: 0 5px 0 0;
+    padding: 21px 0;
+    background: #f4ecd9;
+    color: #333;
+    box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    font-size: 14px; }
+    .btmPanel .frame.addFrame {
+      margin: 0; }
+    .btmPanel .frame .plus {
+      position: absolute;
+      top: 13px;
+      left: 24px;
+      height: 39px;
+      width: 39px;
+      background: url("/img/addSlide.png"); }
+  .btmPanel .arrow {
+    position: absolute;
+    top: 25px;
+    height: 29px;
+    width: 15px;
+    cursor: pointer; }
+    .btmPanel .arrow.btm {
+      right: -19px;
+      background: url("/img/nextFrame.png"); }
+    .btmPanel .arrow.top {
+      left: -19px;
+      background: url("/img/prevFrame.png"); }
+
+.rightPanel {
+  position: absolute;
+  top: 453;
+  right: -179px;
+  z-index: 1;
+  width: 156px; }
+  .small .rightPanel {
+    right: 16px;
+    top: 357px; }
+  .rightPanel .taleBtnWrap {
+    display: block;
+    margin: 0 0 9px;
+    font-size: 19px; }
+    .rightPanel .taleBtnWrap .taleBtn {
+      height: 56px;
+      width: 133px;
+      margin: 0 0 1px 1px;
+      float: none;
+      padding: 10px 0 0; }
+      .rightPanel .taleBtnWrap .taleBtn.preview {
+        text-shadow: -1px -1px 0 #c28f58;
+        color: #f59b06; }
+      .rightPanel .taleBtnWrap .taleBtn.removeSlide {
+        color: #df4a08;
+        text-shadow: -1px -1px 0 #bb3d0a; }
+
+.endTale.taleBtnWrap {
+  position: absolute;
+  bottom: -88px;
+  right: -178px;
+  z-index: 1;
+  padding: 9px 13px 9px 9px; }
+  .small .endTale.taleBtnWrap {
+    bottom: 34px;
+    right: 15px; }
+  .endTale.taleBtnWrap .taleBtn {
+    height: 57px;
+    width: 172px;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+    font-size: 22px;
+    padding: 6px 15px;
+    text-shadow: -1px -1px 0 #bb3e04; }
+
+.dragableHeroes {
+  position: absolute;
+  z-index: 5; }
+
+.heroInDrag {
+  cursor: move;
+  position: absolute; }
+  .heroInDrag:hover .name {
+    display: block; }
+  .displayFrame .heroInDrag.secondPlan .name {
+    margin-left: -55px; }
+    .displayFrame .heroInDrag.secondPlan .name input {
+      font-family: Arial;
+      width: 110px; }
+  .heroInDrag .name {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -84px;
+    display: none; }
+    .heroInDrag .name input {
+      width: 168px;
+      height: 38px;
+      border: none;
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 3px 10px;
+      outline: none;
+      overflow: auto;
+      text-align: center; }
+  .heroInDrag .replica {
+    position: absolute;
+    top: -70px;
+    right: -216px; }
+    .heroInDrag .replica.dragged {
+      position: absolute;
+      top: auto;
+      right: auto; }
+    .heroInDrag .replica:before {
+      content: '';
+      z-index: -1;
+      height: 57px;
+      width: 67px; }
+    .heroInDrag .replica.RT:before {
+      position: absolute;
+      bottom: -45px;
+      left: -3px;
+      background: url("/img/bubleTailRT.png"); }
+    .heroInDrag .replica.LT:before {
+      position: absolute;
+      right: -3px;
+      bottom: -45px;
+      background: url("/img/bubleTailLT.png"); }
+    .heroInDrag .replica.RB:before {
+      position: absolute;
+      top: -50px;
+      left: -3px;
+      background: url("/img/bubleTailRB.png"); }
+    .heroInDrag .replica.LB:before {
+      position: absolute;
+      top: -50px;
+      right: -3px;
+      background: url("/img/bubleTailLB.png"); }
+    .heroInDrag .replica:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -2;
+      border-radius: 52px;
+      box-shadow: 0px 0px 12px 13px rgba(0, 0, 0, 0.15); }
+    .heroInDrag .replica textarea {
+      height: 80px;
+      width: 216px;
+      font-family: Arial;
+      padding: 20px;
+      display: block;
+      background: #f4ecd9;
+      border-radius: 53px;
+      overflow: hidden;
+      text-align: center;
+      font-size: 14px;
+      outline: none;
+      border: none;
+      resize: none; }
+  .heroInDrag .removeHero, .heroInDrag .replicaBtn.remove {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 30px;
+    width: 30px;
+    background-color: #f4ecd9;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
+    .heroInDrag .removeHero:after, .heroInDrag .replicaBtn.remove:after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 8px;
+      height: 14px;
+      width: 15px;
+      background: url("/img/smallX.jpg"); }
+  .heroInDrag .replicaBtn {
+    cursor: pointer; }
+    .heroInDrag .replicaBtn.add {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      width: 30px;
+      background: #f4ecd9;
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      z-index: 2; }
+      .heroInDrag .replicaBtn.add:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 4px;
+        height: 18px;
+        width: 23px;
+        background: url("/img/addBubble.png"); }
+    .heroInDrag .replicaBtn.remove {
+      left: auto;
+      right: -15px; }
+
+.heroImg {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.firstPlan {
+  position: absolute;
+  z-index: 3;
+  height: 240px;
+  width: 190px; }
+
+.secondPlan {
+  position: absolute;
+  z-index: 1;
+  height: 150px;
+  width: 120px; }
+
+.coverImgTbl .coverImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.taleZone.previewBlock:before {
+  display: none; }
+.taleZone.previewBlock:after {
+  display: none; }
+.taleZone.previewBlock .frameBg {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+.taleZone.previewBlock .topBlock {
+  position: absolute;
+  z-index: 5; }
+  .taleZone.previewBlock .topBlock .heroInDrag {
+    cursor: default; }
+  .taleZone.previewBlock .topBlock .firstPlan .replica {
+    bottom: 370px;
+    right: -140px; }
+    .taleZone.previewBlock .topBlock .firstPlan .replica.dragged {
+      bottom: auto;
+      right: auto; }
+  .taleZone.previewBlock .topBlock .secondPlan .replica {
+    bottom: 250px;
+    right: -180px; }
+    .taleZone.previewBlock .topBlock .secondPlan .replica.dragged {
+      bottom: auto;
+      right: auto; }
+  .taleZone.previewBlock .topBlock .replica {
+    position: absolute;
+    width: 220px;
+    text-align: center;
+    font-size: 16px; }
+    .taleZone.previewBlock .topBlock .replica:after {
+      display: none; }
+    .taleZone.previewBlock .topBlock .replica.dragged {
+      position: absolute;
+      top: auto;
+      right: auto; }
+  .taleZone.previewBlock .topBlock .replicaInner {
+    font-family: Arial;
+    width: 220px;
+    padding: 20px;
+    background: #f4ecd9;
+    border-radius: 52px; }
+    .taleZone.previewBlock .topBlock .replicaInner:before {
+      content: '';
+      z-index: -1;
+      height: 57px;
+      width: 67px; }
+    .taleZone.previewBlock .topBlock .replicaInner.RT:before {
+      position: absolute;
+      bottom: -45px;
+      left: -3px;
+      background: url("/img/bubleTailRT.png"); }
+    .taleZone.previewBlock .topBlock .replicaInner.LT:before {
+      position: absolute;
+      right: -3px;
+      bottom: -45px;
+      background: url("/img/bubleTailLT.png"); }
+    .taleZone.previewBlock .topBlock .replicaInner.RB:before {
+      position: absolute;
+      top: -50px;
+      left: -3px;
+      background: url("/img/bubleTailRB.png"); }
+    .taleZone.previewBlock .topBlock .replicaInner.LB:before {
+      position: absolute;
+      top: -50px;
+      right: -3px;
+      background: url("/img/bubleTailLB.png"); }
+    .taleZone.previewBlock .topBlock .replicaInner:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -2;
+      border-radius: 52px;
+      box-shadow: 0px 0px 12px 13px rgba(0, 0, 0, 0.15); }
+  .taleZone.previewBlock .topBlock .heroImg:hover + .name {
+    opacity: 1; }
+  .taleZone.previewBlock .topBlock .name {
+    bottom: -45px;
+    width: 168px;
+    height: 38px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 11px 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    opacity: 0;
+    font-family: Arial; }
+.taleZone.previewBlock .authorText.active {
+  display: table; }
+  .taleZone.previewBlock .authorText.active .authorInner {
+    font-family: Arial;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle; }
+.taleZone.previewBlock .soundBtnWrap {
+  position: absolute;
+  bottom: 34px;
+  left: 28px;
+  height: 49px;
+  width: 49px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fff; }
+  .taleZone.previewBlock .soundBtnWrap .soundBtn {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 37px;
+    width: 36px;
+    background-image: url("/img/soundOn.jpg"); }
+    .taleZone.previewBlock .soundBtnWrap .soundBtn.muted {
+      background-image: url("/img/soundOff.jpg"); }
+.taleZone.previewBlock .sharing {
+  position: absolute;
+  right: -3px;
+  bottom: -11px;
+  height: 69px;
+  width: 195px;
+  padding: 15px 23px 23px 18px;
+  line-height: 170%;
+  background: url("/img/playerShareBg.png");
+  text-align: justify; }
+  .taleZone.previewBlock .sharing:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  .taleZone.previewBlock .sharing .shareLabel {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 13px;
+    color: #82440d;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 3px; }
+  .taleZone.previewBlock .sharing .share {
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("/img/playerShareNw.png");
+    cursor: pointer; }
+    .taleZone.previewBlock .sharing .share.fb {
+      width: 18px;
+      background-position: 0 0; }
+    .taleZone.previewBlock .sharing .share.ok {
+      height: 21px;
+      width: 21px;
+      background: none; }
+    .taleZone.previewBlock .sharing .share.vk {
+      width: 17px;
+      background-position: -52px 0; }
+.taleZone.previewBlock .frameControl {
+  position: absolute;
+  bottom: -16px;
+  left: 484px;
+  height: 142px;
+  width: 248px; }
+  .taleZone.previewBlock .frameControl .prevFrame, .taleZone.previewBlock .frameControl .nextFrame {
+    position: absolute;
+    top: 45px;
+    left: 23px;
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    cursor: pointer;
+    background: #f4ecd9; }
+    .taleZone.previewBlock .frameControl .prevFrame:after, .taleZone.previewBlock .frameControl .nextFrame:after {
+      content: '';
+      height: 26px;
+      width: 32px;
+      position: absolute;
+      top: 11px;
+      left: 5px;
+      background: url("/img/playP.png"); }
+  .taleZone.previewBlock .frameControl .nextFrame {
+    position: absolute;
+    right: 15px;
+    left: auto; }
+    .taleZone.previewBlock .frameControl .nextFrame:after {
+      position: absolute;
+      top: 10px;
+      left: 4px;
+      height: 26px;
+      width: 33px;
+      background: url("/img/playN.png"); }
+  .taleZone.previewBlock .frameControl .playFrame {
+    position: absolute;
+    top: 15px;
+    left: 75px;
+    height: 106px;
+    width: 106px;
+    z-index: 1;
+    cursor: pointer;
+    background: #df4a08;
+    border: 13px solid #f5ebd9;
+    border-radius: 50%;
+    box-shadow: inset -1px -2px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 5px 5px rgba(0, 0, 0, 0.1); }
+    .taleZone.previewBlock .frameControl .playFrame:after {
+      content: '';
+      position: absolute;
+      top: 19px;
+      left: 27px;
+      height: 42px;
+      width: 40px;
+      background: url("/img/play.png"); }
+    .taleZone.previewBlock .frameControl .playFrame.pause:after {
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      height: 34px;
+      width: 34px;
+      background: url("/img/pause.png"); }
+.taleZone.previewBlock .trackWrap {
+  display: none; }
+.taleZone.previewBlock .likeBox {
+  position: absolute;
+  top: 208px;
+  left: 380px;
+  height: 206px;
+  width: 471px;
+  z-index: 2;
+  padding: 43px 58px;
+  font-family: Arial;
+  font-size: 18px;
+  background: url("/img/likeBg.png"); }
+  .taleZone.previewBlock .likeBox .likeBtns {
+    text-align: center;
+    margin: 27px 0 0 -35px;
+    padding: 0 5px 0 0;
+    width: 429px; }
+    .taleZone.previewBlock .likeBox .likeBtns:after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+  .taleZone.previewBlock .likeBox .likeBtn {
+    margin: 5px 0;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer; }
+    .taleZone.previewBlock .likeBox .likeBtn.fb {
+      height: 31px;
+      width: 73px;
+      background: url("/img/fbLike.png"); }
+    .taleZone.previewBlock .likeBox .likeBtn.ok {
+      height: 28px;
+      width: 90px;
+      background: url("/img/okLike.png"); }
+    .taleZone.previewBlock .likeBox .likeBtn.vk {
+      height: 28px;
+      width: 121px;
+      background: url("/img/vkLike.png"); }
+
+.coverImgTbl .coverImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.popUpWrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; }
+  .popUpWrap strong {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block; }
+    .popUpWrap strong.orange {
+      color: #f59b06; }
+    .popUpWrap strong.red {
+      color: #df4a08; }
+  .popUpWrap.visible {
+    display: block; }
+  .popUpWrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: -1; }
+  .popUpWrap .popUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    height: 206px;
+    width: 393px;
+    margin: -103px 0 0 -186px;
+    padding: 30px;
+    background: url("/img/popupBg.png"); }
+    .popUpWrap .popUp.largeText .msg {
+      padding: 0;
+      font-size: 14px; }
+    .popUpWrap .popUp.largeText .btnWrap {
+      top: 133px; }
+    .popUpWrap .popUp .close {
+      position: absolute;
+      top: 17px;
+      right: -14px;
+      height: 30px;
+      width: 30px;
+      background-color: #f4ecd9;
+      border-radius: 6px;
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+      cursor: pointer;
+      opacity: 1; }
+      .popUpWrap .popUp .close:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 8px;
+        height: 14px;
+        width: 15px;
+        background: url("/img/smallX.jpg"); }
+    .popUpWrap .popUp .msg {
+      font-size: 15px;
+      text-align: center;
+      padding: 20px 0 0;
+      font-family: Arial; }
+    .popUpWrap .popUp .btnWrap {
+      position: absolute;
+      top: 120px;
+      left: 0;
+      width: 100%;
+      text-align: center; }
+    .popUpWrap .popUp .taleBtn {
+      height: 38px;
+      width: 116px;
+      padding: 11px 0 0;
+      margin: 0 18px 0 18px;
+      display: inline-block;
+      float: none;
+      font-family: Futura;
+      letter-spacing: 1px;
+      line-heigth: 100%;
+      text-transform: uppercase;
+      font-size: 18px; }
+
+.popUpInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: none; }
+  .popUpInfo.visible {
+    display: table; }
+  .popUpInfo .popUpBody {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+  .popUpInfo .content {
+    position: relative;
+    background: white;
+    margin: 20px auto;
+    max-width: 70%;
+    height: 0;
+    padding-top: 40%; }
+  .popUpInfo .popUpTitle {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    font-family: Futura;
+    font-size: 32px;
+    color: #fff; }
+  .popUpInfo iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0; }
+  .popUpInfo .close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    height: 30px;
+    width: 30px;
+    background-color: #f4ecd9;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    cursor: pointer;
+    opacity: 1; }
+    .popUpInfo .close:after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 8px;
+      height: 14px;
+      width: 15px;
+      background: url("/img/smallX.jpg"); }
+
+/*# sourceMappingURL=base.css.map */

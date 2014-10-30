@@ -1,0 +1,53 @@
+<div class="right-side" {{#is display 'set'}}style="display: none;"{{/is}}>
+    <div class="content-header">
+        <h3 class="content-title clearfix">
+            Список контактов
+
+            <div class="pull-right btn btn-primary addContact">
+                <i class="fa fa-plus"></i>
+                &nbsp;Добавить
+            </div>
+        </h3>
+    </div>
+    <div class="content">
+        {{#if contacts.isResolved}}
+            {{#if contacts.length}}
+                <table class='table table-striped'>
+                    <thead>
+                    <tr>
+                        <th>Заголовок</th>
+                        <th>Действия</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {{#each contacts}}
+                            <tr class="contact" {{data "contacts"}}>
+                                <td>
+                                    {{#each lang}}{{#if title}}{{title}},{{/if}}{{/each}}
+                                </td>
+                                <td>
+                                    <div class="btn btn-sm btn-default editContact">
+                                        <i class="fa fa-pencil"></i>
+                                    </div>
+                                    <div class="btn btn-sm btn-danger removeContact">
+                                        <i class="fa fa-trash-o"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+
+            {{else}}
+                <div class="alert alert-info">
+                    <i class="fa fa-info"></i>
+                    <b>Примечание! </b>
+                    Ни одной записи еще не добавлено!
+                </div>
+            {{/if}}
+        {{/if}}
+    </div>
+</div>
+<div class="contactForm" {{#is display 'list'}}style="display: none;"{{/is}}>
+
+</div>

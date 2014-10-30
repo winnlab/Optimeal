@@ -1,0 +1,139 @@
+<div class="content-header">
+    <h3 class="content-title clearfix">
+        {{#if article._id}}
+            Редактирование
+        {{else}}
+            Добавление
+        {{/if}}
+        <div class="pull-right btn btn-primary toList">
+            Назад
+        </div>
+    </h3>
+
+</div>
+<div class="content">
+    <div class="col-md-12">
+        <div class="box box-primary">
+
+            <div class="box-body clearfix">
+
+                <div class="col-md-12">
+                    <form class="form-horizontal setArticle">
+
+                        {{#if article.ArticleCategory}}
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="name">Категория статьи:</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" name="articleCategory">
+                                        {{{renderCategoriesOptions article.ArticleCategory article.articleCategory}}}
+                                    </select>
+                                    <div class="help help-block"></div>
+                                </div>
+                            </div>
+                        {{/if}}
+
+                        {{#if article.Author}}
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="name">Автор:</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" name="author">
+                                        {{{renderAuthorsOptions article.Author article.author}}}
+                                    </select>
+                                    <div class="help help-block"></div>
+                                </div>
+                            </div>
+                        {{/if}}
+
+                        <tabs>
+                            {{#each langs}}
+                                <panel name="{{name}}">
+                                    <input type="hidden" value="{{_id}}" name="lang[{{@index}}]languageId">
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="title">Заголовок:</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control" type="text" value="{{getArrayObjValue article.lang @index 'title'}}" name="lang[{{@index}}]title" placeholder="Заголовок">
+                                            <div class="help help-block"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="text">Содержание:</label>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" {{wysihtml5}} name="lang[{{@index}}]content" placeholder="Содержание">{{getArrayObjValue article.lang @index 'content'}}</textarea>
+                                            <div class="help help-block"></div>
+                                        </div>
+                                    </div>
+                                </panel>
+                            {{/each}}
+                        </tabs>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Готов:</label>
+                            <div class="col-md-10">
+                                <input type="checkbox" {{isChecked article.ready}} name="ready" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Ссылка:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{article.link}}" name="link" placeholder="Ссылка" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Альтернативное отображение:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{article.view}}" name="view" placeholder="Альтернативное отображение" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Цвет заголовка:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{article.titleColor}}" name="titleColor" placeholder="Цвет заголовка" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Цвет текста:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{article.textColor}}" name="textColor" placeholder="Цвет текста" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        {{#if article._id}}
+                            <upload
+                                    class="col-md-12"
+                                    name="img"
+                                    url="/admin/article/img"
+                                    delete-url="/admin/article/img"
+                                    entity="{article}"
+                                    uploaded="{article.img}"
+                                    accept="image/*"
+                                    >
+                                Загрузить Картинку
+                            </upload>
+                        {{/if}}
+
+                        <button class="btn btn-primary col-md-offset-2" type="submit">
+                            {{#if article._id}}
+                                Сохранить
+                            {{else}}
+                                Добавить
+                            {{/if}}
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+<div class="content-header">
+    <h3 class="content-title clearfix">
+        {{#if articleCategory._id}}
+            Редактирование
+        {{else}}
+            Добавление
+        {{/if}}
+        <div class="pull-right btn btn-primary toList">
+            Назад
+        </div>
+    </h3>
+
+</div>
+<div class="content">
+    <div class="col-md-12">
+        <div class="box box-primary">
+
+            <div class="box-body clearfix">
+
+                <div class="col-md-12">
+                    <form class="form-horizontal setArticleCategory">
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Позиция:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{articleCategory.position}}" name="position" placeholder="Позиция" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Ссылка:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{articleCategory.link}}" name="link" placeholder="Ссылка" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="name">Альтернативное отображение:</label>
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" value="{{articleCategory.view}}" name="view" placeholder="Альтернативное отображение" />
+                                <div class="help help-block"></div>
+                            </div>
+                        </div>
+
+                        <tabs>
+                            {{#each langs}}
+                                <panel name="{{name}}">
+                                    <input type="hidden" value="{{_id}}" name="lang[{{@index}}]languageId">
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="title">Заголовок:</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control" type="text" value="{{getArrayObjValue articleCategory.lang @index 'title'}}" name="lang[{{@index}}]title" placeholder="Заголовок">
+                                            <div class="help help-block"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="text">Содержание:</label>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" {{wysihtml5}} name="lang[{{@index}}]content" placeholder="Содержание">{{getArrayObjValue articleCategory.lang @index 'content'}}</textarea>
+                                            <div class="help help-block"></div>
+                                        </div>
+                                    </div>
+                                </panel>
+                            {{/each}}
+                        </tabs>
+
+                        {{#if articleCategory._id}}
+                            <upload
+                                    class="col-md-12"
+                                    name="img"
+                                    url="/admin/articleCategory/img"
+                                    delete-url="/admin/articleCategory/img"
+                                    entity="{articleCategory}"
+                                    uploaded="{articleCategory.img}"
+                                    accept="image/*"
+                                    >
+                                Загрузить картинку
+                            </upload>
+
+                        {{/if}}
+
+                        <button class="btn btn-primary col-md-offset-2" type="submit">
+                            {{#if articleCategory._id}}
+                                Сохранить
+                            {{else}}
+                                Добавить
+                            {{/if}}
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
