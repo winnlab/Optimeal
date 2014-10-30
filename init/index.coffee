@@ -11,7 +11,7 @@ Application = require './application'
 AuthStartegies = require './auth'
 ModelPreloader = require './mpload'
 
-appPort = 3002
+appPort = 3003
 
 async.waterfall [
 	(next) ->
