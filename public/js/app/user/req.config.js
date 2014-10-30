@@ -64,5 +64,5 @@ require.config({
 		}
 
 	},
-	waitSeconds: 25
+	waitSeconds: 40
 });
