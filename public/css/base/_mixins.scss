@@ -8,3 +8,62 @@
     right: 0;
     bottom: 0;
 }
+
+@mixin pseudo {
+	position: absolute;
+	content: "";
+}
+
+@mixin border_boxed {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin lovely {
+	content: "";
+    display: block;
+    margin-top: 100%;
+}
+
+@mixin image_fix {
+	@include box_shadow(0 0 0 rgba(0, 0, 0, 0));
+}
+
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	-moz-transition: 	$transition;
+	-o-transition: 		$transition;
+	-ms-transition: 	$transition;
+	transition: 		$transition;
+}
+
+@mixin absolute_horizontal_centered {
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+}
+
+@mixin absolute_centered {
+	@include absolute_horizontal_centered();
+	top: 0;
+	bottom: 0;
+}
+
+@mixin border_radius($size) {
+	-moz-border-radius: $size;
+	-webkit-border-radius: $size;
+	-khtml-border-radius: $size;
+	border-radius: $size;
+}
+
+@mixin box_shadow($shadow...) {
+	-webkit-box-shadow:	$shadow;
+	-moz-box-shadow:	$shadow;
+	box-shadow:			$shadow;
+}
+
+@mixin rounded {
+	@include border_radius(99999em);
+}

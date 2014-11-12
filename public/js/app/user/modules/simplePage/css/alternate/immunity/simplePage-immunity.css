@@ -1,0 +1,31 @@
+#sp-immunity .mainPageFirst {
+  height: 319px;
+  overflow: visible; }
+  #sp-immunity .mainPageFirst:after {
+    clear: both; }
+  #sp-immunity .mainPageFirst .gradient {
+    background: url("/img/immunity/gradient.jpg") repeat-x center;
+    height: 206px; }
+  #sp-immunity .mainPageFirst .baseboard {
+    background: url("/img/immunity/baseboard.png") repeat-x center;
+    height: 67px; }
+  #sp-immunity .mainPageFirst .wood {
+    background: url("/img/immunity/wood.jpg") repeat-x center;
+    height: 61px;
+    max-width: none; }
+  #sp-immunity .mainPageFirst .cat_mix {
+    font-family: 'PT_Sans_Regular';
+    padding: 72px 55px 0 79px; }
+#sp-immunity .cat_thief {
+  z-index: 10; }
+  #sp-immunity .cat_thief .content:before {
+    position: absolute;
+    content: "";
+    background: url("/img/immunity/cat_thief.png") no-repeat;
+    width: 374px;
+    height: 470px;
+    left: 62px;
+    top: -171px;
+    z-index: 10; }
+
+/*# sourceMappingURL=simplePage-immunity.css.map */

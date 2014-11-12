@@ -35,3 +35,28 @@ body {
 		}
 	}
 }
+
+.white_title {
+	color: #ccc1a2;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	height: 120px;
+	background-color: #ffffff;
+	position: relative;
+	z-index: 5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	
+	.content {
+		width: $siteWidth;
+		margin: 0 auto;
+		height: 100%;
+		position: relative;
+	}
+	
+	.label {
+		@include absolute();
+		z-index: 10;
+	}
+}

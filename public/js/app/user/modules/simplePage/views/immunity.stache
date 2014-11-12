@@ -1,0 +1,28 @@
+<div class="mainPageWrapper">
+	<div class="mainPageFirst">
+		
+		<div class="backgrounds">
+			<div class="gradient"></div>
+			<div class="baseboard"></div>
+			<div class="wood"></div>
+		</div>
+		
+		<div class="content">
+			<div class="column"></div>
+			
+			<div class="column cat_mix">
+				Уникальный микс из полезных трав и ягод, отборные мясные ингредиенты и пребиотики образуют ежедневную природную защиту иммунитета и дарят котику заряд энергии и бодрости.
+			</div>
+		</div>
+	</div>
+	
+	<div class="white_title cat_thief">
+		<div class="content">
+			<div class="label adorable_table">
+				<div class="adorable_cell">
+					В состав оптимила входит:
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

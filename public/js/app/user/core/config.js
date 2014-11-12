@@ -9,9 +9,11 @@ define({
 				id: 'main-page'
 			}
 		}],
-		modules: [{
-			name: 'sp',
-			path: 'app/modules/simplePage/simplePage'
-		}]
+		modules: [
+			{
+				name: 'sp',
+				path: 'app/modules/simplePage/simplePage'
+			}
+		]
 	}
 });

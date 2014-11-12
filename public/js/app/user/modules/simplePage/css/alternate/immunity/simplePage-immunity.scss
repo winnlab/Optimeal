@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import '../../../../../../../../css/base/_placeholders.scss';
+@import '../../../../../../../../css/base/_variables.scss';
+@import '../../../../../../../../css/base/_mixins.scss';
+
+#sp-immunity {
+	.mainPageFirst {
+		height: 319px;
+		overflow: visible;
+		
+		&:after {
+			clear: both;
+		}
+		
+		.gradient {
+			background: url('/img/immunity/gradient.jpg') repeat-x center;
+			height: 206px;
+		}
+		
+		.baseboard {
+			background: url('/img/immunity/baseboard.png') repeat-x center;
+			height: 67px;
+		}
+		
+		.wood {	
+			background: url('/img/immunity/wood.jpg') repeat-x center;
+			height: 61px;
+			max-width: none;
+		}
+		
+		.cat_mix {
+			font-family: 'PT_Sans_Regular';
+			padding: 72px 55px 0 79px;
+		}
+	}
+	
+	.cat_thief {
+		z-index: 10;
+		
+		.content {
+			&:before {
+				@include pseudo;
+				background: url('/img/immunity/cat_thief.png') no-repeat;
+				width: 374px;
+				height: 470px;
+				left: 62px;
+				top: -171px;
+				z-index: 10;
+			}
+		}
+	}
+}

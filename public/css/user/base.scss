@@ -25,6 +25,7 @@ html {
 body {
     background-size: cover;
     background-position: center center;
+	color: $base;
 }
 
 .clearfix {
@@ -46,4 +47,5 @@ module {
     }
 }
 
+@import 'useful.scss';
 @import 'general.scss';
