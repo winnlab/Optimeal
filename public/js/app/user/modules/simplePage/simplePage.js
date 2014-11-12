@@ -103,8 +103,6 @@
 						difference = wnd_width - this.meal_image_width,
 						left;
 					
-					console.log(difference);
-					
 					if(difference > 0) {
 						difference = 0;
 					}
