@@ -70,7 +70,8 @@ textarea {
 .half {
   float: left;
   width: 50%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 /* Useful stuff */
 .adorable_container {
@@ -1877,6 +1878,160 @@ body {
     .social .vkIcon:hover {
       background-position: -23px -22px; }
 
+.greenBtn {
+  color: #ffffff;
+  background: #3c880a;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.9375rem 2.5rem;
+  border-radius: 2.5rem;
+  position: relative; }
+  .greenBtn .btnBackground {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+    width: 95%;
+    height: 100%;
+    background: #006935;
+    z-index: -1;
+    border-radius: 2.5rem;
+    -webkit-transition: background 150ms ease-in-out 0s;
+    -moz-transition: background 150ms ease-in-out 0s;
+    transition: background 150ms ease-in-out 0s; }
+  .greenBtn:hover {
+    cursor: pointer; }
+  .greenBtn:hover .btnBackground {
+    background: #3c880a; }
+
+.whiteBtn {
+  color: #006935;
+  background: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.375rem;
+  padding: 1.5625rem 2.8125rem;
+  border-radius: 2.5rem;
+  position: relative;
+  -webkit-transition: all 150ms ease-in-out 0s;
+  -moz-transition: all 150ms ease-in-out 0s;
+  transition: all 150ms ease-in-out 0s; }
+  .whiteBtn .btnBackground {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+    width: 95%;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+    border-radius: 2.5rem;
+    -webkit-transition: all 150ms ease-in-out 0s;
+    -moz-transition: all 150ms ease-in-out 0s;
+    transition: all 150ms ease-in-out 0s; }
+  .whiteBtn:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: rgba(60, 136, 10, 0.5); }
+  .whiteBtn:hover .btnBackground {
+    background: #3c880a; }
+
+.popup {
+  position: absolute;
+  height: 3.125rem;
+  width: 3.125rem; }
+  .popup .closedLogo {
+    visibility: visible;
+    opacity: 1;
+    width: 3.125rem;
+    height: 3.125rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #f4d249;
+    background-image: url("/img/popupPaw.png");
+    -webkit-transition: all 150ms ease-in-out 0s;
+    -moz-transition: all 150ms ease-in-out 0s;
+    transition: all 150ms ease-in-out 0s; }
+    .popup .closedLogo:hover {
+      cursor: pointer;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1); }
+  .popup.active .popupContent {
+    visibility: visible;
+    opacity: 1; }
+  .popup.active .closedLogo {
+    visibility: hidden;
+    opacity: 0; }
+  .popup .popupContent {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    height: 3.125rem;
+    width: 3.125rem;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 150ms ease-in-out 0s;
+    -moz-transition: all 150ms ease-in-out 0s;
+    transition: all 150ms ease-in-out 0s; }
+    .popup .popupContent .popupClose {
+      position: absolute;
+      width: 2.1875rem;
+      height: 2.1875rem;
+      top: 50%;
+      margin-top: -1.09375rem;
+      left: 50%;
+      margin-left: -1.09375rem;
+      border-radius: 50%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #f4d249;
+      background-image: url("/img/popupClose.png");
+      z-index: 1; }
+      .popup .popupContent .popupClose:hover {
+        cursor: pointer; }
+    .popup .popupContent .popupText {
+      position: absolute;
+      bottom: 1.09375rem;
+      left: -100px;
+      border-radius: 50%;
+      background-color: #f4d249;
+      color: #ffffff;
+      text-align: center;
+      font-size: 0.75rem;
+      line-height: 1.9;
+      width: 15.625rem;
+      height: 15.625rem; }
+      .popup .popupContent .popupText .popupTextWrapper {
+        width: 100%;
+        top: 50%;
+        position: absolute;
+        padding: 0 1.875rem;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+
 .white_title {
   color: #ccc1a2;
   font-size: 30px;
@@ -1888,6 +2043,17 @@ body {
   z-index: 5;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold; }
+  .white_title.arrowed:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 150px;
+    height: 27px;
+    background: url("/img/immunity/bottom_arrow.png") no-repeat;
+    bottom: -27px; }
   .white_title .content {
     width: 1024px;
     margin: 0 auto;

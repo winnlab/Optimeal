@@ -36,6 +36,180 @@ body {
 	}
 }
 
+.greenBtn {
+	color: #ffffff;
+	background: #3c880a;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: rem(16);
+	padding: rem(15) rem(40);
+	border-radius: rem(40);
+	position: relative;
+
+	.btnBackground {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		@include transform(translateX(-50%));
+		top: 0;
+		width: 95%;
+		height: 100%;
+		background: #006935;
+		z-index: -1;
+		border-radius: rem(40);
+		@include transition(background 150ms ease-in-out 0s);
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	&:hover .btnBackground {
+		background: #3c880a;
+	}
+}
+
+.whiteBtn {
+	color: #006935;
+	background: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: rem(22);
+	padding: rem(25) rem(45);
+	border-radius: rem(40);
+	position: relative;
+	@include transition(all 150ms ease-in-out 0s);
+
+	.btnBackground {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		@include transform(translateX(-50%));
+		top: 0;
+		width: 95%;
+		height: 100%;
+		background: #ffffff;
+		z-index: -1;
+		border-radius: rem(40);
+		@include transition(all 150ms ease-in-out 0s);
+	}
+	&:hover {
+		cursor: pointer;
+		color: #ffffff;
+		background: rgba(60, 136, 10, 0.5);
+	}
+	&:hover .btnBackground {
+		background: #3c880a;
+	}
+}
+
+.popup {
+	$size: rem(50);
+	position: absolute;
+	height: $size;
+	width: $size;
+
+	.closedLogo {
+		visibility: visible;
+		opacity: 1;
+
+		width: $size;
+		height: $size;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		border-radius: 50%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-color: #f4d249;
+		background-image: url('#{$imgPath}popupPaw.png');
+		@include transition(all 150ms ease-in-out 0s);
+
+		&:hover {
+			cursor: pointer;
+			@include transform(scale(1.1));
+		}
+	}
+
+	&.active {
+		.popupContent {
+			visibility: visible;
+			opacity: 1;
+		}
+		.closedLogo {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+
+	.popupContent {
+
+		visibility: hidden;
+		opacity: 0;
+
+		position: absolute;
+		height: $size;
+		width: $size;
+		top: 0;
+		left: 0;
+
+		@include transition(all 150ms ease-in-out 0s);
+
+		.popupClose {
+			$size: rem(35);
+
+			position: absolute;
+			width: $size;
+			height: $size;
+
+			top: 50%;
+			margin-top: -$size/2;
+
+			left: 50%;
+			margin-left: -$size/2;
+
+			border-radius: 50%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-color: #f4d249;
+			background-image: url('#{$imgPath}popupClose.png');
+
+			z-index: 1;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.popupText {
+			$popupTextSize: rem(250);
+
+			position: absolute;
+			bottom: $size/2;
+			left: -250px/2 + 50px/2;
+
+
+			border-radius: 50%;
+			background-color: #f4d249;
+			color: #ffffff;
+			text-align: center;
+			font-size: rem(12);
+			line-height: 1.9;
+			width: $popupTextSize;
+			height: $popupTextSize;
+			
+			.popupTextWrapper {
+				width: 100%;
+				top: 50%;
+				position: absolute;
+				padding: 0 rem(30);
+				@include transform(translateY(-50%));
+			}
+		}
+	}
+}
+
 .white_title {
 	color: #ccc1a2;
 	font-size: 30px;
@@ -47,6 +221,17 @@ body {
 	z-index: 5;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
+	
+	&.arrowed {
+		&:after {
+			@include pseudo;
+			@include absolute_horizontal_centered;
+			width: 150px;
+			height: 27px;
+			background: url('/img/immunity/bottom_arrow.png') no-repeat;
+			bottom: -27px;
+		}
+	}
 	
 	.content {
 		width: $siteWidth;
