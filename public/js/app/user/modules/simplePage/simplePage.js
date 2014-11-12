@@ -1,22 +1,22 @@
 'use strict';
 
 (function (){
-
 	var component = 'simplePage',
 		componentRoute = 'page';
-
+	
 	define(
 		[
 			'canjs',
 			'core/appState',
+			'jquery-ui',
 			'bx-slider/jquery.bxslider.min',
 			'css!bx-slider/jquery.bxslider.css',
+			'css!jquery-ui-1.11.2/jquery-ui.min.css',
 			'velocity',
 			'css!app/modules/'+component+'/css/'+component+'.css'
 		],
-
+		
 		function (can, appState) {
-
 			return can.Control.extend({
 				defaults: {
 					viewpath: '/js/app/user/modules/'+component+'/views/'
@@ -60,6 +60,10 @@
 						if (self.link == 'main-page') {
 							self.carousel();
 						}
+						
+						if(this.link == 'immunity') {
+							this.slider();
+						}
 					}
 				},
 
@@ -67,6 +71,10 @@
 					var self = this;
 
 					$('.products', self.element).bxSlider();
+				},
+				
+				slider: function() {
+					this.element.find('.slider').slider();
 				},
 
 				'.closedLogo click': function (el, ev) {

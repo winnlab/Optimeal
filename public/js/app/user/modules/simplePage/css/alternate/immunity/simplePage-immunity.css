@@ -35,7 +35,37 @@
   #sp-immunity .meal_table {
     background-color: #f4f1e2;
     height: 799px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    #sp-immunity .meal_table .slider_container {
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      -moz-border-radius: 99999em;
+      -webkit-border-radius: 99999em;
+      -khtml-border-radius: 99999em;
+      border-radius: 99999em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 500px;
+      bottom: 78px;
+      background-color: #ede0c5;
+      height: 17px;
+      z-index: 10;
+      padding: 0 69px 0 4px; }
+    #sp-immunity .meal_table .slider {
+      height: 17px; }
+    #sp-immunity .meal_table .ui-slider-handle {
+      -moz-border-radius: 99999em;
+      -webkit-border-radius: 99999em;
+      -khtml-border-radius: 99999em;
+      border-radius: 99999em;
+      height: 11px;
+      background: url("/img/immunity/slider_handle_bg.png") repeat-x;
+      width: 65px;
+      margin: 8px 0; }
   #sp-immunity .meal_content {
     position: relative;
     height: 100%; }

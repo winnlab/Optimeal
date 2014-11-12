@@ -9,6 +9,7 @@ require.config({
 		canjs: 'canjs/amd/can',
 		core: '../app/user/core',
 		jquery: 'jquery/dist/jquery',
+		'jquery-ui': 'jquery-ui-1.11.2/jquery-ui.min',
 		underscore: 'underscore/underscore',
 		modules: '../app/admin/modules',
 		components: '../app/admin/components',
@@ -30,6 +31,11 @@ require.config({
 	shim: {
 		'jquery': {
 			exports: '$'
+		},
+		'jquery-ui': {
+			deps: [
+				'jquery'
+			]
 		},
 		'underscore': {
 			exports: '_'

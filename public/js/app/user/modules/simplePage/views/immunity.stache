@@ -27,6 +27,10 @@
 	</div>
 	
 	<div class="meal_table">
+		<div class="slider_container">
+			<div class="slider"></div>
+		</div>
+		
 		<div class="meal_content">
 			<img src="/img/immunity/meal_table.jpg" />
 			

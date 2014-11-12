@@ -57,6 +57,31 @@
 		background-color: #f4f1e2;
 		height: 799px;
 		overflow: hidden;
+		position: relative;
+		
+		.slider_container {
+			@include absolute_horizontal_centered;
+			@include rounded;
+			@include border_boxed;
+			width: 500px;
+			bottom: 78px;
+			background-color: #ede0c5;
+			height: 17px;
+			z-index: 10;
+			padding: 0 69px 0 4px;
+		}
+		
+		.slider {
+			height: 17px;
+		}
+		
+		.ui-slider-handle {
+			@include rounded;
+			height: 11px;
+			background: url('/img/immunity/slider_handle_bg.png') repeat-x;
+			width: 65px;
+			margin: 8px 0;
+		}
 	}
 	
 	.meal_content {
