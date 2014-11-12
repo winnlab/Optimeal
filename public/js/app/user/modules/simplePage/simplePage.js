@@ -62,19 +62,58 @@
 						}
 						
 						if(this.link == 'immunity') {
-							this.slider();
+							this.immunity_slider();
+							this.variables();
 						}
 					}
 				},
-
+				
+				variables: function() {
+					this.window = $(window);
+					this.meal_content = this.element.find('.meal_content');
+					this.meal_image_width = this.meal_content.find('.meal_image').width();
+				},
+				
 				carousel: function () {
 					var self = this;
-
+					
 					$('.products', self.element).bxSlider();
 				},
 				
-				slider: function() {
-					this.element.find('.slider').slider();
+				immunity_slider: function() {
+					var that = this,
+						options = {
+						min: 0,
+						max: 1.01,
+						step: 0.01,
+						values: [0],
+						slide: function(event, ui) {
+							that.immunity_slider_change(ui.values[0]);
+						},
+						change: function(event, ui) {
+							that.immunity_slider_change(ui.values[0]);
+						}
+					};
+					
+					this.element.find('.slider').slider(options);
+				},
+				
+				immunity_slider_change: function(value) {
+					var wnd_width = this.window.width(),
+						difference = wnd_width - this.meal_image_width,
+						left;
+					
+					console.log(difference);
+					
+					if(difference > 0) {
+						difference = 0;
+					}
+					
+					left = difference * value;
+					
+					this.meal_content.css({
+						left: left
+					});
 				},
 
 				'.closedLogo click': function (el, ev) {

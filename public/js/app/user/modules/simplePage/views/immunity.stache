@@ -32,7 +32,7 @@
 		</div>
 		
 		<div class="meal_content">
-			<img src="/img/immunity/meal_table.jpg" />
+			<img class="meal_image" src="/img/immunity/meal_table.jpg" />
 			
 			<div class="popup yeast">
                 <div class="closedLogo"></div>
