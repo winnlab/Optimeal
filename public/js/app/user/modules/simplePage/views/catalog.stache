@@ -1,0 +1,301 @@
+<div class="mainPageWrapper">
+	<div class="mainPageFirst">
+		
+		<div class="icon dry_food">
+		</div>
+		
+		<div class="icon pauchi">
+		</div>
+		
+		<div class="icon for_kittens active">
+		</div>
+		
+		<div class="backgrounds">
+			<div class="gradient"></div>
+			<div class="baseboard"></div>
+			<div class="wood"></div>
+			<div class="food"></div>
+			<div class="glow"></div>
+		</div>
+		
+		<div class="content">
+			<div class="half cat_playable"></div>
+			
+			<div class="half cat_uniq">
+				<div>
+					Каждая кошка уникальна, а значит, она нуждается в особом корме и рационе, разработанном специально для нее.
+				</div>
+				
+				<div>
+					В линейке вкусов «Оптимил» самые взыскательные натуры найдут лакомства на свой вкус – от нежного лосося до курочки с овощами, от говядины до крольчатины, с пребиотиками и травами. 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="white_title arrowed">
+		<div class="content">
+			<div class="label adorable_table">
+				<div class="adorable_cell">
+					Сухой корм
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="items_conteiner">
+		<div class="product active">
+			<div class="content">
+				<div class="half product_image">
+					<img src="/img/catalog/product_image.jpg" />
+				</div>
+				
+				<div class="half product_text">
+					<div class="product_top_title">
+						<div>
+							Сухой корм
+						</div>
+						
+						<div>
+							для взрослых кошек
+						</div>
+					</div>
+					
+					<div class="product_title">
+						С курицей
+					</div>
+					
+					<div class="product_desc">
+						Иммунитет вашей кошки будет всегда защищенным благодаря инновационному питанию, в котором швейцарские ученые соединили богатое белком мясо курицы, пребиотики и уникальный микс целебных трав: женьшеня, корня алтея и чабреца.
+					</div>
+					
+					<div class="button_container">
+						<div class="greenBtn">
+							<div class="btnBackground"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="more_info">
+				<div class="content">
+					<div class="half left">
+						<div class="composition">
+							Состав:
+						</div>
+						
+						<div class="composition_text">
+							мясо курицы и субпродукты животного происхождения 29 %, кукурузный глютен, рис, кукуруза, жир животный, масло подсолнечное, клетчатка свекольная, рыбная мука, минералы, семена льна, дрожжи пивные, витамины, метионин, яичный порошок, клюква, пребиотики, сушеный виноград, консервант (сорбат калия), антиоксидант (термокс), чабрец.
+						</div>
+						
+						<div class="value">
+							Кормовая (питательная) ценность 100 г корма:
+						</div>
+						
+						<div class="value_text">
+							<div class="value_item">
+								Белок - 34 г
+							</div>
+							
+							<div class="value_item">
+								Витамин D3 - 1200 MЕ/кг
+							</div>
+							
+							<div class="value_item">
+								Жир - 15 г
+							</div>
+							
+							<div class="value_item">
+								Витамин E - 500 мг/кг
+							</div>
+							
+							<div class="value_item">
+								Зола - 7 г
+							</div>
+							
+							<div class="value_item">
+								Кальций - 10 г/кг
+							</div>
+							
+							<div class="value_item">
+								Клетчатка - 2,5 г
+							</div>
+							
+							<div class="value_item">
+								Фосфор - 8 г/кг
+							</div>
+							
+							<div class="value_item">
+								Витамин А - 14000 МЕ/кг
+							</div>
+						</div>
+						
+						<div class="packages">
+							<div class="packages_title">
+								Упаковки весом:
+							</div>
+							
+							<div class="package_items">
+								<div class="package_item small">
+									<div class="package_image">
+										<img src="/img/catalog/bag.png" />
+									</div>
+									
+									<div class="package_label">
+										300 г
+									</div>
+								</div>
+								
+								<div class="package_item">
+									<div class="package_image">
+										<img src="/img/catalog/bag.png" />
+									</div>
+									
+									<div class="package_label">
+										11 кг
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="half right">
+						<div class="doze">
+							ДОЗИРОВАНИЕ ДЛЯ КОТА
+						</div>
+						
+						<table class="doze_table">
+							<tr>
+								<td>
+									<div>
+										Вес кошки
+									</div>
+									
+									<div>
+										(кг)
+									</div>
+								</td>
+								
+								<td>
+									<div>
+										Количество корма,
+									</div>
+									
+									<div>
+										г/день
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									3
+								</td>
+								
+								<td>
+									55-65
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									4
+								</td>
+								
+								<td>
+									70-60
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									5
+								</td>
+								
+								<td>
+									85-110
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									6
+								</td>
+								
+								<td>
+									105-135
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									7
+								</td>
+								
+								<td>
+									120-155
+								</td>
+							</tr>
+						</table>
+						
+						<div class="doze_info">
+							<img class="doze_info_image" src="/img/catalog/info.png" />
+							
+							<div class="doze_info_text">
+								Питание нужно вводить постепенно (хотя бы в течении первых пяти дней). Позаботьтесь о свежей воде, которая должна быть в миске вашего любимца постоянно.
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer">
+					<div class="content adorable_table">
+						<div class="adorable_cell">
+							<div>
+								Изготовлено по лицензии, по технологии швейцарской компании Swiss Pet Nutrition Group GmbH, c/o BDO AG, Industriestrasse 53,
+							</div>
+							
+							<div>
+								P.O. Box 30, 6312 Steinhausen-Zug, Switzerland.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product">
+			<div class="content">
+				<div class="half product_image">
+					<img src="/img/catalog/product_image.jpg" />
+				</div>
+				
+				<div class="half product_text">
+					<div class="product_top_title">
+						<div>
+							Сухой корм
+						</div>
+						
+						<div>
+							для взрослых кошек
+						</div>
+					</div>
+					
+					<div class="product_title">
+						С курицей
+					</div>
+					
+					<div class="product_desc">
+						Иммунитет вашей кошки будет всегда защищенным благодаря инновационному питанию, в котором швейцарские ученые соединили богатое белком мясо курицы, пребиотики и уникальный микс целебных трав: женьшеня, корня алтея и чабреца.
+					</div>
+					
+					<div class="button_container">
+						<div class="greenBtn">
+							<div class="btnBackground"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

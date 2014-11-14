@@ -3,8 +3,6 @@
   #sp-immunity .mainPageFirst {
     height: 319px;
     overflow: visible; }
-    #sp-immunity .mainPageFirst:after {
-      clear: both; }
     #sp-immunity .mainPageFirst .gradient {
       background: url("/img/immunity/gradient.jpg") repeat-x center;
       height: 206px; }
@@ -46,9 +44,6 @@
       -webkit-border-radius: 99999em;
       -khtml-border-radius: 99999em;
       border-radius: 99999em;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
       width: 500px;
       bottom: 78px;
       background-color: #ede0c5;
@@ -98,9 +93,6 @@
           line-height: 20px;
           margin-top: 30px; }
       #sp-immunity .meal_content .popup .popupTextWrapper {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
         padding: 76px; }
       #sp-immunity .meal_content .popup.raisins {
         top: 380px;
@@ -152,9 +144,6 @@
       margin: 0 auto;
       height: 100%; }
     #sp-immunity .bottom .desc {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
       width: 340px;
       font-size: 14px;
       padding: 0 10px;

@@ -22,6 +22,18 @@
   src: url("/css/fonts/pt_sans_bold.eot?#iefix") format("embedded-opentype"), url("/css/fonts/pt_sans_bold.woff") format("woff"), url("/css/fonts/pt_sans_bold.ttf") format("truetype"), url("/css/fonts/pt_sans_bold.svg#pt_sansbold") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'segoe_ui';
+  src: url("/css/fonts/segoe_ui.eot");
+  src: url("/css/fonts/segoe_ui.eot?#iefix") format("embedded-opentype"), url("/css/fonts/segoe_ui.woff") format("woff"), url("/css/fonts/segoe_ui.ttf") format("truetype"), url("/css/fonts/segoe_ui.svg#segoe_ui") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'segoe_ui_bold';
+  src: url("/css/fonts/segoe_ui_bold.eot");
+  src: url("/css/fonts/segoe_ui_bold.eot?#iefix") format("embedded-opentype"), url("/css/fonts/segoe_ui_bold.woff") format("woff"), url("/css/fonts/segoe_ui_bold.ttf") format("truetype"), url("/css/fonts/segoe_ui_bold.svg#segoe_ui_bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 html {
   overflow-y: scroll; }
 

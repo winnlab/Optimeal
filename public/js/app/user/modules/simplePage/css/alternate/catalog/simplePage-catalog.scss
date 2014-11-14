@@ -1,0 +1,430 @@
+@charset "UTF-8";
+@import '../../../../../../../../css/base/_placeholders.scss';
+@import '../../../../../../../../css/base/_variables.scss';
+@import '../../../../../../../../css/base/_mixins.scss';
+
+@mixin catalog_icon_after {
+	@include pseudo;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+#sp-catalog {
+	line-height: 20px;
+	
+	.icon {
+		position: absolute;
+		width: 66px;
+		height: 77px;
+		right: 0;
+		cursor: pointer;
+		
+		&:before {
+			@include pseudo;
+			width: 73px;
+			height: 90px;
+			background: url('/img/catalog/inactive_icon.png') no-repeat;
+			bottom: -8px;
+			right: 0;
+			z-index: 1;
+		}
+		
+		&.dry_food {
+			top: 502px;
+			
+			&:after {
+				@include catalog_icon_after;
+				background: url('/img/catalog/dry_food.png') no-repeat;
+			}
+			
+			&.active {
+				&:before {
+					width: 89px;
+					height: 103px;
+					background: url('/img/catalog/dry_food_active.png') no-repeat;
+				}
+			}
+		}
+		
+		&.pauchi {
+			top: 609px;
+			
+			&:after {
+				@include catalog_icon_after;
+				background: url('/img/catalog/pauchi.png') no-repeat;
+			}
+			
+			&.active {
+				&:before {
+					width: 91px;
+					height: 92px;
+					background: url('/img/catalog/pauchi_active.png') no-repeat;
+				}
+			}
+		}
+		
+		&.for_kittens {
+			top: 715px;
+			
+			&:after {
+				@include catalog_icon_after;
+				background: url('/img/catalog/for_kittens.png') no-repeat;
+			}
+			
+			&.active {
+				&:before {
+					width: 92px;
+					height: 102px;
+					background: url('/img/catalog/for_kittens_active.png') no-repeat;
+				}
+			}
+		}
+	}
+	
+	.mainPageFirst {
+		height: 322px;
+		overflow: visible;
+		
+		.gradient {
+			background: url('/img/immunity/gradient.jpg') repeat-x center;
+			height: 131px;
+		}
+		
+		.baseboard {
+			background: url('/img/immunity/baseboard.png') repeat-x center;
+			height: 67px;
+		}
+		
+		.wood {	
+			background: url('/img/catalog/wood.jpg') repeat-x center;
+			height: 139px;
+			max-width: none;
+		}
+		
+		.food {
+			position: absolute;
+			left: 0;
+			width: 94px;
+			height: 119px;
+			top: 130px;
+			background: url('/img/catalog/topper_food.png') no-repeat;
+		}
+		
+		.glow {
+			background: url("/img/catalog/topper_glow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+			height: 279px;
+			left: 624px;
+			position: absolute;
+			top: 30px;
+			width: 551px;
+			z-index: 10;
+		}
+		
+		.cat_uniq {
+			font-family: 'PT_Sans_Regular';
+			padding: 96px 42px 0 107px;
+		}
+	}
+	
+	.cat_playable {
+		z-index: 10;
+		
+		.content {
+			&:before {
+				@include pseudo;
+				@include image_fix;
+				background: url('/img/immunity/cat_thief.png') no-repeat;
+				width: 374px;
+				height: 470px;
+				left: 62px;
+				top: -171px;
+				z-index: 10;
+			}
+		}
+	}
+	
+	.product {
+		background-color: #f4f1e2;
+		
+		&:nth-child(2n) {
+			.product_image {
+				float: right;
+			}
+		}
+		
+		&.active {
+			.more_info {
+				display: block;
+			}
+			
+			.greenBtn {
+				background-color: $green;
+				
+				&:after {
+					content: 'Закрыть';
+				}
+			}
+			
+			.btnBackground {
+				background-color: $green;
+			}
+		}
+		
+		> .content {
+			height: 500px;
+		}
+		
+		.content {
+			width: $siteWidth;
+			margin: 0 auto;
+		}
+		
+		.product_image {
+			&:before {
+				@include pseudo;
+				z-index: 1;
+				width: 507px;
+				height: 315px;
+				background: url('/img/catalog/product_image_before.png') no-repeat;
+				left: 0;
+				bottom: 0;
+			}
+			
+			img {
+				@include absolute_horizontal_centered;
+				max-width: 510px;
+				max-height: 450px;
+				position: absolute;
+				bottom: 50px;
+				z-index: 2;
+			}
+		}
+		
+		.product_text {
+			padding: 104px 86px 50px;
+		}
+		
+		.product_top_title {
+			color: $green;
+			font-size: 18px;
+			line-height: 25px;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		.product_title {
+			color: $green;
+			font-size: 30px;
+			line-height: 30px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-top: 18px;
+		}
+		
+		.product_desc {
+			font-family: 'PT_Sans_Regular';
+			margin-top: 29px;
+		}
+		
+		.button_container {
+			position: absolute;
+			left: 83px;
+			bottom: 50px;
+		}
+		
+		.greenBtn {
+			float: left;
+			position: relative;
+			z-index: 1;
+			font-size: 17px;
+			height: 49px;
+			padding: 0 41px;
+			width: 181px;
+			
+			&:after {
+				@include transform(translate(-50%, -50%));
+				position: absolute;
+				content: 'Подробнее';
+				top: 50%;
+				z-index: 2;
+				left: 50%;
+			}
+			
+			.btnBackground {
+				z-index: 1;
+			}
+			
+			.adorable_table {
+				z-index: 10;
+			}
+		}
+		
+		.more_info {
+			display: none;
+			background-color: $green;
+			margin-top: -67px;
+			position: relative;
+			z-index: 2;
+			font-size: 14px;
+			font-family: 'segoe_ui';
+			color: #ffffff;
+			
+			> .content {
+				clear: both;
+				
+				.left {
+					padding: 0 0 30px 86px;
+				}
+				
+				.right {
+					padding: 0 86px 30px;
+				}
+			}
+			
+			.footer {
+				clear: both;
+				color: $lightgreenfont;
+				height: 76px;
+				background-color: $lightgreen;
+				font-size: 12px;
+			}
+			
+			.adorable_cell {
+				padding: 0 86px;
+				text-align: left;
+			}
+			
+			.composition {
+				color: #9cedc5;
+				text-transform: uppercase;
+				font-family: 'segoe_ui_bold';
+			}
+			
+			.composition_text {
+				margin-top: 20px;
+			}
+			
+			.value {
+				color: #9cedc5;
+				text-transform: uppercase;
+				font-family: 'segoe_ui_bold';
+				margin-top: 34px;
+			}
+			
+			.value_text {
+				margin-top: 17px;
+			}
+			
+			.value_item {
+				margin-top: 7px;
+				float: left;
+				
+				&:nth-child(2n) {
+					width: 166px;
+				}
+				
+				&:nth-child(2n+1) {
+					width: 260px;
+				}
+			}
+			
+			.packages {
+				clear: both;
+				padding-top: 30px;
+			}
+			
+			.packages_title {
+				float: left;
+				font-family: 'segoe_ui_bold';
+				width: 104px;
+				text-transform: uppercase;
+				margin-top: 6px;
+			}
+			
+			.package_item {
+				float: left;
+				width: 47px;
+				
+				&:not(:first-child) {
+					margin-left: 40px;
+				}
+				
+				&.small {
+					width: 44px;
+					
+					img {
+						width: 35px;
+						height: 51px;
+					}
+				}
+			}
+			
+			.package_image {
+				height: 69px;
+				position: relative;
+				
+				img {
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+					width: 47px;
+					height: 69px;
+				}
+			}
+			
+			.package_label {
+				text-align: right;
+				font-size: 18px;
+				line-height: 18px;
+				font-family: 'segoe_ui_bold';
+				margin-top: 10px;
+			}
+			
+			.doze {
+				color: #9cedc5;
+				text-transform: uppercase;
+				font-family: 'segoe_ui_bold';
+			}
+			
+			.doze_table {
+				border: 1px solid #ffffff;
+				width: 327px;
+				border-collapse: collapse;
+				margin-top: 18px;
+				
+				tr, td {
+					border: 1px solid #ffffff;
+					text-align: center;
+				}
+				
+				td {
+					padding: 12px;
+					
+					&:nth-child(2n +1) {
+						width: 141px;
+					}
+				}
+			}
+			
+			.doze_info {
+				margin-top: 40px;
+			}
+			
+			.doze_info_image {
+				float: left;
+				margin-top: 4px;
+			}
+			
+			.doze_info_text {
+				float: left;
+				margin-left: 11px;
+				width: 299px;
+			}
+		}
+	}
+}

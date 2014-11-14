@@ -10,10 +10,6 @@
 		height: 319px;
 		overflow: visible;
 		
-		&:after {
-			clear: both;
-		}
-		
 		.gradient {
 			background: url('/img/immunity/gradient.jpg') repeat-x center;
 			height: 206px;
@@ -62,7 +58,6 @@
 		.slider_container {
 			@include absolute_horizontal_centered;
 			@include rounded;
-			@include border_boxed;
 			width: 500px;
 			bottom: 78px;
 			background-color: #ede0c5;
@@ -128,7 +123,6 @@
 			}
 			
 			.popupTextWrapper {
-				@include border_boxed;
 				padding: 76px;
 			}
 			
@@ -212,7 +206,6 @@
 		}
 		
 		.desc {
-			@include border_boxed;
 			width: 340px;
 			font-size: 14px;
 			padding: 0 10px;
