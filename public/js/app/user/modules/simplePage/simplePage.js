@@ -22,13 +22,12 @@
 					viewpath: '/js/app/user/modules/'+component+'/views/'
 				}
 			}, {
-
 				init: function () {
 					var self = this,
 						lang = appState.attr('lang'),
 						link = can.route.attr('id');
 					self.link = link;
-
+					
 					can.ajax({
 						url: (lang ? '/' + lang : '') + '/'+componentRoute+'/' + link
 					}).done(function (data) {
@@ -36,13 +35,12 @@
 					}).fail(function () {
 						self.loaded();
 					});
-
 				},
-
+				
 				render: function (data) {
 					var self = this;
 					self.view = data.data.view;
-
+					
 					self.element.html(
 						can.view(self.options.viewpath + (data.data.view ? data.data.view : 'index') + '.stache', {
 							appState: appState,
@@ -51,27 +49,36 @@
 					);
 					self.loaded();
 				},
-
+				
 				loaded: function () {
 					var self = this;
 					if (self.options.isReady) {
 						self.options.isReady.resolve();
-
+						
+						this.variables();
+						
 						if (self.link == 'main-page') {
 							self.carousel();
 						}
 						
 						if(this.link == 'immunity') {
 							this.immunity_slider();
-							this.variables();
 						}
 					}
 				},
 				
 				variables: function() {
-					this.window = $(window);
-					this.meal_content = this.element.find('.meal_content');
-					this.meal_image_width = this.meal_content.find('.meal_image').width();
+					this.classname = 'active';
+					
+					if(this.link == 'immunity') {
+						this.window = $(window);
+						this.meal_content = this.element.find('.meal_content');
+						return this.meal_image_width = this.meal_content.find('.meal_image').width();
+					}
+					
+					if(this.link == 'catalog') {
+						this.icons = this.element.find('.icon');
+					}
 				},
 				
 				carousel: function () {
@@ -113,16 +120,26 @@
 						left: left
 					});
 				},
-
-				'.closedLogo click': function (el, ev) {
-					el.parents('.popup').addClass('active');
+				
+				'.closedLogo click': function (el) {
+					el.parents('.popup').addClass(this.classname);
 				},
-
-				'.popupClose click': function (el, ev) {
-					el.parents('.popup').removeClass('active');
+				
+				'.popupClose click': function (el) {
+					el.parents('.popup').removeClass(this.classname);
+				},
+				
+				'.icon click': function (el) {
+					this.icons.removeClass(this.classname);
+					el.addClass(this.classname);
+				},
+				
+				'.product_button click': function (el) {
+					var product = el.closest('.product');
+					
+					product.toggleClass(this.classname);
 				}
 			});
-
 		}
 	);
 })();

@@ -70,7 +70,7 @@
 					</div>
 					
 					<div class="button_container">
-						<div class="greenBtn">
+						<div class="greenBtn product_button">
 							<div class="btnBackground"></div>
 						</div>
 					</div>
@@ -290,7 +290,7 @@
 					</div>
 					
 					<div class="button_container">
-						<div class="greenBtn">
+						<div class="greenBtn product_button">
 							<div class="btnBackground"></div>
 						</div>
 					</div>
