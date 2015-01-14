@@ -1177,7 +1177,28 @@
       border: #c4df9b 2px solid;
       background-color: #ffffff; }
 
-.address-info {
-  height: 305px; }
+.bg-address {
+  position: relative;
+  background-color: #edf6ec; }
+
+.content-address {
+  width: 1024px;
+  margin: 0 auto;
+  height: 100%; }
+  .content-address .address-info {
+    width: 100%;
+    height: 305px; }
+    .content-address .address-info .address-line-1 {
+      float: left;
+      width: 343px;
+      height: 100%; }
+    .content-address .address-info .address-line-2 {
+      float: left;
+      width: 264px;
+      height: 100%; }
+    .content-address .address-info .address-line-3 {
+      float: left;
+      width: 225px;
+      height: 100%; }
 
 /*# sourceMappingURL=simplePage.css.map */

@@ -28,14 +28,29 @@
         </div>
     </div>
 
-    <div class="mainPageWrapper">
-
-            <div class="content">
-                <div class="address-info">
-
+    <div class="mainPageWrapper bg-address">
+        <div class="content-address">
+            <div class="address-info">
+                <div class="address-line-1">
+                    <div class="text-gray">
+                        {{{appState.locale.contact.cooperationUA}}}
+                    </div>
+                    <div class="text-green">
+                        {{{appState.locale.contact.hotlineUA}}}
+                    </div>
+                </div>
+                <div class="address-line-2">
+                    <div class="text-gray">
+                        {{{appState.locale.contact.cooperationRU}}}
+                    </div>
+                </div>
+                <div class="address-line-3">
+                    <div class="text-green">
+                        {{{appState.locale.contact.addressSwiss}}}
+                    </div>
                 </div>
             </div>
-
+        </div>
     </div>
 
     <div class="contacts">

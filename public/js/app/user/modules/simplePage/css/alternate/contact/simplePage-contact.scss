@@ -72,6 +72,37 @@
 	}
 }
 
-.address-info {
-	height: 305px;
+.bg-address {
+	position: relative;
+	background-color: #edf6ec;
 }
+
+.content-address {
+	width: $siteWidth;
+	margin: 0 auto;
+	height: 100%;
+
+	.address-info {
+		width: 100%;
+		height: 305px;
+
+		.address-line-1 {
+			float: left;
+			width: 343px;
+			height: 100%;
+		}
+
+		.address-line-2 {
+			float: left;
+			width: 264px;
+			height: 100%;
+		}
+
+		.address-line-3 {
+			float: left;
+			width: 225px;
+			height: 100%;
+		}
+	}
+}
+
