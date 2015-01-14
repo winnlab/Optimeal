@@ -1,8 +1,9 @@
 <div class="mainPageWrapper">
-    <div class="mainPageFirst mainPageSlide">
+    <div class="mainPageFirst mainPageSlide bg-block">
 
         <div class="backgrounds">
-            <div class="gradient"></div>
+            <div class="bg-contact-cat"></div>
+            <div class="gradient bg-gradient"></div>
             <div class="baseboard"></div>
             <div class="wood"></div>
             <div class="color"></div>
@@ -31,6 +32,9 @@
     <div class="mainPageWrapper bg-address">
         <div class="content-address">
             <div class="address-info">
+                <div class="address-title">
+                    <p>{{appState.locale.contact.contactTitle}}</p>
+                </div>
                 <div class="address-line-1">
                     <div class="text-gray">
                         {{{appState.locale.contact.cooperationUA}}}
@@ -55,9 +59,9 @@
 
     <div class="contacts">
         <div class="topStripe">
-            <div class="curve">
-                <div class="leftStripe"></div>
-                <div class="rightStripe"></div>
+            <div class="curve-contact">
+                <div class="leftStr"></div>
+                <div class="rightStr"></div>
             </div>
         </div>
         <div class="whiteBtn">
