@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import '../../../../../../../../css/base/_placeholders.scss';
+@import '../../../../../../../../css/base/_variables.scss';
+@import '../../../../../../../../css/base/_mixins.scss';
+
+.contact-form {
+	float: right;
+	width: 612px;
+	height: 330px;
+	margin-top: 70px;
+
+	.form-title {
+		width: 100%;
+		height: 25px;
+
+		p {
+			text-align: left;
+			font-size: 30px;
+			color: #006633;
+		}
+	}
+
+	input, textarea {
+		width: 293px;
+		border-radius: 10px;
+		border: #c4df9b 2px solid;
+	}
+
+	input {
+		margin-top: 35px;
+		height: 43px;
+	}
+
+	textarea {
+		margin-top: 23px;
+		height: 114px;
+	}
+
+	button {
+		float: right;
+		width: 192px;
+		height: 51px;
+		margin-right: 3px;
+		border-radius: 30px;
+		background-color: #3c880a;
+		color: #ffffff;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.form-part-left {
+		float: left;
+		width: 51.4%;
+		height: 78.6%;
+	}
+
+	.form-part-right {
+		float: right;
+		width: 48.6%;
+		height: 78.6%;
+
+		.form-captcha {
+			margin-top: 23px;
+			width: 293px;
+			height: 114px;
+			border-radius: 10px;
+			border: #c4df9b 2px solid;
+			background-color: #ffffff;
+		}
+	}
+}
+
+.address-info {
+	height: 305px;
+}

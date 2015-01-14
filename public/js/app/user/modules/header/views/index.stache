@@ -9,11 +9,11 @@
         <nav class="menu">
             <ul>
                 <li><a href="">{{appState.locale.whyOptimeal}}</a></li>
-                <li><a href="">{{appState.locale.aboutImmunity}}</a></li>
-                <li><a href="">{{appState.locale.catalogue}}</a></li>
+                <li><a href="/sp/immunity">{{appState.locale.aboutImmunity}}</a></li>
+                <li><a href="/sp/catalog">{{appState.locale.catalogue}}</a></li>
                 <li><a href="">{{appState.locale.production}}</a></li>
                 <li><a href="">{{appState.locale.encyclopedia}}</a></li>
-                <li><a href="">{{appState.locale.contacts}}</a></li>
+                <li><a href="/sp/contact">{{appState.locale.contacts}}</a></li>
             </ul>
         </nav>
 

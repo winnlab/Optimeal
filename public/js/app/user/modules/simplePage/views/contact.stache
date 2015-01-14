@@ -1,0 +1,57 @@
+<div class="mainPageWrapper">
+    <div class="mainPageFirst mainPageSlide">
+
+        <div class="backgrounds">
+            <div class="gradient"></div>
+            <div class="baseboard"></div>
+            <div class="wood"></div>
+            <div class="color"></div>
+        </div>
+
+        <div class="content">
+            <form name="contact" class="contact-form">
+                <div class="form-title">
+                    <p>ОСТАВИТЬ ЗАПРОС:</p>
+                </div>
+                <div class="form-part-left">
+                    <input type="text" placeholder="Контактное лицо*">
+                    <textarea placeholder="Комментарии*"/>
+                </div>
+                <div class="form-part-right">
+                    <input type="text" placeholder="E-mail*">
+                    <div class="form-captcha">
+                        captcha
+                    </div>
+                </div>
+                <button type="submit">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mainPageWrapper">
+
+            <div class="content">
+                <div class="address-info">
+
+                </div>
+            </div>
+
+    </div>
+
+    <div class="contacts">
+        <div class="topStripe">
+            <div class="curve">
+                <div class="leftStripe"></div>
+                <div class="rightStripe"></div>
+            </div>
+        </div>
+        <div class="whiteBtn">
+            {{appState.locale.whereToBuy}}
+            <div class="btnBackground"></div>
+        </div>
+    </div>
+
+</div>
+
+
+

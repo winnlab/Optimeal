@@ -1124,4 +1124,60 @@
         margin-left: 11px;
         width: 287px; }
 
+.mainPageWrapper .mainPageFirst .content .catImage, .mainPageWrapper .mainPageFirst .catsKeepSilenceAbout, .mainPageWrapper .mainPageSecond .label, .mainPageWrapper .mainPageSecond .label .arrow, .mainPageWrapper .mainPageThird .leftColumn .image, .mainPageWrapper .mainPageThird .leftColumn .image .nutrimentSmall, .mainPageWrapper .mainPageThird .leftColumn .nutriment, .mainPageWrapper .mainPageThird .rightColumn .nutrimentSmall.fruitRight, .mainPageWrapper .contacts, .mainPageWrapper .contacts .topStripe .curve {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.contact-form {
+  float: right;
+  width: 612px;
+  height: 330px;
+  margin-top: 70px; }
+  .contact-form .form-title {
+    width: 100%;
+    height: 25px; }
+    .contact-form .form-title p {
+      text-align: left;
+      font-size: 30px;
+      color: #006633; }
+  .contact-form input, .contact-form textarea {
+    width: 293px;
+    border-radius: 10px;
+    border: #c4df9b 2px solid; }
+  .contact-form input {
+    margin-top: 35px;
+    height: 43px; }
+  .contact-form textarea {
+    margin-top: 23px;
+    height: 114px; }
+  .contact-form button {
+    float: right;
+    width: 192px;
+    height: 51px;
+    margin-right: 3px;
+    border-radius: 30px;
+    background-color: #3c880a;
+    color: #ffffff; }
+    .contact-form button:hover {
+      cursor: pointer; }
+  .contact-form .form-part-left {
+    float: left;
+    width: 51.4%;
+    height: 78.6%; }
+  .contact-form .form-part-right {
+    float: right;
+    width: 48.6%;
+    height: 78.6%; }
+    .contact-form .form-part-right .form-captcha {
+      margin-top: 23px;
+      width: 293px;
+      height: 114px;
+      border-radius: 10px;
+      border: #c4df9b 2px solid;
+      background-color: #ffffff; }
+
+.address-info {
+  height: 305px; }
+
 /*# sourceMappingURL=simplePage.css.map */
